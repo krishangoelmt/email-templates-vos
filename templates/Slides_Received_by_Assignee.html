@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+    <script src="../script.js"></script>
     <style>
+      .ExternalClass {
+        width: 100%;
+      }
+
+      table {
+        border-collapse: separate;
+      }
+
+      .ExternalClass td {
+        line-height: 100%;
+      }
+      .ExternalClass {
+        width: 100%;
+      }
+
       .tableWrapperinner {
         padding: 0;
         margin: 0;
@@ -19,6 +30,7 @@
       }
 
       .company-name {
+        font-family: open sans, helvetica, arial, verdana;
         color: #606369;
         font-size: 18px;
         font-weight: bold;
@@ -30,6 +42,7 @@
       }
 
       .open-text {
+        font-family: open sans, helvetica, arial, verdana;
         width: 423px;
         color: #2a2e36;
         font-family: Arial;
@@ -61,7 +74,7 @@
       .center-title {
         width: 50%;
         color: #606369;
-        font-family: Arial;
+        font-family: open sans, helvetica, arial, verdana;
         border-top: 16px solid #f5f6f7;
       }
 
@@ -71,6 +84,7 @@
         font-weight: bold;
         line-height: 26px;
         text-align: center;
+        font-family: open sans, helvetica, arial, verdana;
         border-bottom: 16px solid #f5f6f7;
       }
 
@@ -92,6 +106,7 @@
 
       .disclaimer {
         color: #989ca6;
+        font-family: open sans, helvetica, arial, verdana;
         font-size: 12px;
         line-height: 16px;
         border-left: 20px solid #fff;
@@ -101,6 +116,7 @@
 
       .context {
         color: #606369;
+        font-family: open sans, helvetica, arial, verdana;
         font-weight: bold;
         border-top: 24px solid #fff;
         border-right: 20px solid #fff;
@@ -109,10 +125,8 @@
       }
 
       .context-text {
-        height: 60px;
-        width: 560px;
         color: #2a2e36;
-        font-family: Arial;
+        font-family: open sans, helvetica, arial, verdana;
         border-right: 20px solid #fff;
         border-left: 20px solid #fff;
 
@@ -138,6 +152,7 @@
         text-decoration: none;
         color: #ffffff;
         font-weight: 600;
+        font-family: open sans, helvetica, arial, verdana;
       }
 
       .cta-wrap {
@@ -166,6 +181,7 @@
         <td>
           <center>
             <table
+              align="center"
               width="600"
               cellspacing="0"
               cellpadding="0"
@@ -173,16 +189,20 @@
             >
               <tr>
                 <td colspan="2" class="company-name">
-                  MindTickle
+                  $COMPANY_NAME$
                 </td>
               </tr>
               <tr>
                 <td class="open-text">
-                  Hi John! You’ve been assigned to record on slides of a
-                  Voice-over Slideshow ‘MindTickle Glossary of Terms’.
+                  Hi $ASIGNEE_NAME$! You’ve been assigned to record on
+                  $NO_OF_SLIDES$ slides of a Voice-over Slideshow ‘$TASK_NAME$’.
                 </td>
                 <td class="open-image-wrap" valign="top">
-                  <img src="./images.jpeg" class="open-image" alt="img1" />
+                  <img
+                    src="$URL_TASK_IMAGE$"
+                    class="open-image"
+                    alt="task attachments"
+                  />
                 </td>
               </tr>
               <tr>
@@ -196,7 +216,7 @@
                   >
                     <tr>
                       <td class="center-title" colspan="1">
-                        AssigndBy
+                        Assigned By
                       </td>
                       <td class="center-title" colspan="1">
                         Due Date
@@ -204,37 +224,38 @@
                     </tr>
                     <tr>
                       <td class="center-text">
-                        Himanshu
+                        $ASSIGNED_BY$
                       </td>
                       <td class="center-text">
-                        Never
+                        $DUE_DATE$
                       </td>
                     </tr>
                     <tr>
                       <td colspan="2" class="separator"></td>
                     </tr>
                     <tr>
-                      <td colspan="2">
+                      <td colspan="2" align="center">
                         <img
-                          src="./Email_image.svg"
+                          src="$EMAIL_IMAGE$"
                           alt="todo"
                           class="content-img"
                         />
                       </td>
                     </tr>
                     <tr>
-                      <td colspan="2" class="cta-wrap">
+                      <td colspan="2" class="cta-wrap" align="center">
                         <table
                           width="auto"
                           border="0"
                           cellpadding="0"
+                          align="center"
                           cellspacing="0"
                           style="display:inline-block"
                         >
                           <tr>
                             <td align="center" valign="middle">
                               <a
-                                href="$entity.learners[i].reviewLink$"
+                                href="$SLIDESHOW_URL$"
                                 style="word-wrap:normal; color:#4d7cc7; word-break:normal; white-space:nowrap; display:block; text-decoration:none"
                                 target="_blank"
                               >
@@ -248,9 +269,9 @@
                                     <td class="cta">
                                       <a
                                         class="cta-inner"
-                                        href="$entity.learners[i].reviewLink$"
+                                        href="$SLIDESHOW_URL$"
                                         target="_blank"
-                                        >Review</a
+                                        >Go To Slideshow</a
                                       >
                                     </td>
                                   </tr>
@@ -271,34 +292,53 @@
               </tr>
               <tr>
                 <td colspan="2" class="context-text">
-                  This email was sent to john.smith@companyname.com. You
-                  received this email because you were invited to
-                  companyname.mindtickle.com.
+                  $CONTEXT$
                 </td>
               </tr>
               <tr>
                 <td class="signature">
-                  Thanks,
-                </td>
-              </tr>
-              <tr>
-                <td class="signature">
-                  Himanshu Bansal
-                </td>
-              </tr>
-              <tr>
-                <td class="signature">
-                  MindTickle
+                  Thanks, <br />
+                  $params.fromName$ <br />
+                  $company.companyName$
                 </td>
               </tr>
               <tr>
                 <td colspan="2" class="separator topBottom24"></td>
               </tr>
               <tr>
-                <td colspan="2" class="disclaimer">
-                  This email was sent to john.smith@companyname.com. You
-                  received this email because you were invited to
-                  companyname.mindtickle.com.
+                <td style="padding:0;margin:0;" colspan="2" class="disclaimer">
+                  <center>
+                    <table
+                      width="100%"
+                      cellspacing="0"
+                      align="center"
+                      cellpadding="0"
+                    >
+                      <tr>
+                        <td style="padding:0;margin:0;" align="left">
+                          <span style="color:#7c7c7c;font-size:12px;"
+                            >This email was sent to
+                          </span>
+                          <a
+                            style="color:#4d7cc7;font-size:12px;text-decoration:none;"
+                            href="mailto:$recipient.email$"
+                            target="_blank"
+                            >$recipient.email$.</a
+                          >
+                          <span style="color:#7c7c7c;font-size:12px;"
+                            >You received this email because you were invited
+                            to</span
+                          >
+                          <a
+                            style="color:#4d7cc7;font-size:12px;text-decoration:none;"
+                            href="$company.companyLink$"
+                            target="_blank"
+                            >$company.companyName$.</a
+                          >
+                        </td>
+                      </tr>
+                    </table>
+                  </center>
                 </td>
               </tr>
             </table>
