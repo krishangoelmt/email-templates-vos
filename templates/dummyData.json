@@ -12,5 +12,6 @@
   "$params.fromName$": "Ishan Rathi",
   "$company.companyName$": "MindTickle",
   "$recipient.email$": "email.gmail@hotmail.com",
-  "$company.companyLink$": "www.company.com"
+  "$company.companyLink$": "www.company.com",
+  "$MAIL_SUBJECT$": "Task aggigned to you"
 }
