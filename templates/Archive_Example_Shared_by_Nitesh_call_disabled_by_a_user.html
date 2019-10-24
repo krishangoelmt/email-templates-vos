@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .bodyWrapper {
+        padding: 0;
+        margin: 0;
+        background: #fff;
+      }
+
+      .tableWrapper {
+        font-family: open sans, helvetica, arial, verdana;
+        border: 1px solid #fff;
+        background: #fff;
+      }
+
+      .tableWrapperinner {
+        background: #fff;
+        border: 1px solid #e9e9e9;
+      }
+
+      .templateBodyWrapper {
+        width: 100%;
+        border-top: 16px solid #fff;
+        border-right: 20px solid #fff;
+        border-bottom: 16px solid #fff;
+        border-left: 20px solid #fff;
+        background: #fff;
+      }
+
+      .templateLogoText {
+        font-family: open sans, helvetica, arial, verdana;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 28px;
+        color: #606369;
+      }
+
+      .templateTextStyle {
+        font-family: open sans, helvetica, arial, verdana;
+        color: #606369;
+        font-size: 14px;
+        line-height: 16px;
+      }
+
+      .templateTextSmall {
+        font-family: open sans, helvetica, arial, verdana;
+        color: #606369;
+        font-size: 12px;
+        line-height: 14px;
+      }
+
+      .linkTextDark {
+        font-family: open sans, helvetica, arial, verdana;
+        font-size: 18px;
+        line-height: 20px;
+        color: #2a2e36;
+        text-decoration: none;
+      }
+
+      .linkTextDarkSmall {
+        font-family: open sans, helvetica, arial, verdana;
+        font-size: 14px;
+        line-height: 20px;
+        color: #2a2e36;
+        text-decoration: none;
+      }
+
+      .blueTextLinkSmall {
+        font-family: open sans, helvetica, arial, verdana;
+        font-size: 12px;
+        line-height: 16px;
+        color: #4d7cc7;
+        text-decoration: none;
+      }
+
+      .footerTextGrey {
+        font-family: open sans, helvetica, arial, verdana;
+        color: #989ca6;
+        font-size: 12px;
+        line-height: 16px;
+      }
+
+      .descriptionNumberColumnStyle {
+        font-family: open sans, helvetica, arial, verdana;
+        width: 16px;
+        color: #606369;
+        font-size: 14px;
+        line-height: 14px;
+      }
+
+      .vAlignTop {
+        vertical-align: top;
+      }
+
+      .alignLeft {
+        text-align: left;
+      }
+
+      .alignCenter {
+        text-align: center;
+      }
+
+      .fontBold {
+        font-weight: bold;
+      }
+
+      .wordBreak {
+        word-break: break-word;
+      }
+
+      .callDetailsBlock {
+        padding: 24px;
+        border-radius: 4px;
+        background-color: #f5f6f7;
+      }
+
+      .imageBlock {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+      }
+
+      .buttonWrapper {
+        border-radius: 3px;
+        background: #0072bc;
+      }
+
+      .buttonStyling {
+        font-family: open sans, helvetica, arial, verdana;
+        font-size: 14px;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 3px;
+        padding: 6px 40px;
+        border: 1px solid #0072bc;
+        display: inline-block;
+      }
+
+      .rowBorderStyling {
+        padding: 0;
+        margin: 0;
+        line-height: 1px;
+        border-top: 1px solid #e9e9e9;
+      }
+
+      .rowBorderStylingInner {
+        padding: 0;
+        margin: 0;
+        line-height: 1px;
+        border-top: 1px solid #ddd;
+      }
+
+      .emptyRow8 {
+        padding: 0;
+        margin: 0;
+        height: 8px;
+        line-height: 8px;
+      }
+
+      .emptyRow12 {
+        padding: 0;
+        margin: 0;
+        height: 12px;
+
+        line-height: 12px;
+      }
+
+      .emptyRow16 {
+        padding: 0;
+        margin: 0;
+        line-height: 16px;
+        height: 16px;
+      }
+
+      .emptyRow20 {
+        padding: 0;
+        margin: 0;
+        line-height: 20px;
+        height: 20px;
+      }
+
+      .emptyRow24 {
+        padding: 0;
+        margin: 0;
+        line-height: 24px;
+        height: 24px;
+      }
+
+      .emptyRow32 {
+        padding: 0;
+        margin: 0;
+        height: 32px;
+        line-height: 32px;
+      }
+
+      .width5 {
+        width: 5%;
+      }
+
+      .width30 {
+        width: 30%;
+      }
+
+      .botImage {
+        width: auto;
+        height: 60px;
+      }
+
+      .userPicWrapperStyle {
+        width: 32px;
+        height: 32px;
+        vertical-align: middle;
+      }
+
+      .userImage {
+        width: 28px;
+        height: 28px;
+        vertical-align: middle;
+      }
+
+      .commonImageStyling {
+        width: auto;
+        height: 40px;
+      }
+    </style>
+  </head>
+
+  <body class="bodyWrapper">
+    <table
+      width="100%"
+      cellspacing="0"
+      cellpadding="0"
+      rowspan="0"
+      colspan="0"
+      border="0"
+      class="tableWrapper"
+    >
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>
+          <center>
+            <table
+              width="600"
+              cellspacing="0"
+              cellpadding="0"
+              class="tableWrapperinner"
+            >
+              <tr>
+                <td>
+                  <table
+                    width="100%"
+                    cellspacing="0"
+                    cellpadding="0"
+                    class="templateBodyWrapper"
+                  >
+                    <tr>
+                      <td colspan="5" class="templateLogoText alignLeft">
+                        $company_name$
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="5" class="emptyRow20">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td colspan="5" class="callDetailsBlock">
+                        <table
+                          width="100%"
+                          align="center"
+                          class="alignCenter"
+                          cellspacing="0"
+                          cellpadding="0"
+                        >
+                          <tr>
+                            <td align="center" class="alignCenter">
+                              <img
+                                src="https://d37wfh1lmbz1ur.cloudfront.net/sadBot.png"
+                                width="auto"
+                                height="60"
+                                class="botImage"
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="5" class="emptyRow24">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td align="center" class="linkTextDark alignCenter">
+                              Recording disabled for the following meeting:
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="5" class="emptyRow16">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td
+                              colspan="5"
+                              align="center"
+                              class="templateTextStyle fontBold alignCenter"
+                            >
+                              Meeting Title
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="5" class="emptyRow8">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td
+                              align="center"
+                              class="templateTextStyle alignCenter"
+                            >
+                              $call_title$
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="5" class="emptyRow16">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td colspan="5" class="rowBorderStyling">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td colspan="5" class="emptyRow16">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td
+                              colspan="5"
+                              align="center"
+                              class="footerTextGrey alignCenter"
+                            >
+                              Disabled By:
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="5" class="emptyRow12">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td colspan="5" align="center" class="alignCenter">
+                              <table
+                                align="center"
+                                cellspacing="0"
+                                cellpadding="0"
+                              >
+                                <tr>
+                                  <td
+                                    align="right"
+                                    valign="middle"
+                                    class="userPicWrapperStyle"
+                                  >
+                                    <img
+                                      valign="middle"
+                                      src="https://d37wfh1lmbz1ur.cloudfront.net/userProfileGray.png"
+                                      width="auto"
+                                      height="28px"
+                                      class="userImage"
+                                    />
+                                  </td>
+                                  <td>&nbsp;&nbsp;</td>
+                                  <td
+                                    align="left"
+                                    valign="middle"
+                                    class="linkTextDarkSmall fontBold"
+                                  >
+                                    $updated_by$
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="5" class="emptyRow8">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td
+                              align="center"
+                              colspan="5"
+                              class="templateTextStyle"
+                            >
+                              <span>"</span>$message$<span>"</span>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="5" class="emptyRow24">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td
+                        colspan="5"
+                        align="center"
+                        class="templateTextStyle fontBold alignCenter"
+                      >
+                        Benefits of recording a call on Call AI
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="5" class="emptyRow24">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td
+                        valign="top"
+                        align="center"
+                        width="30%"
+                        class="width30 alignCenter vAlignTop"
+                      >
+                        <table
+                          width="100%"
+                          cellspacing="0"
+                          cellpadding="0"
+                          rowspan="0"
+                          border="0"
+                        >
+                          <tr>
+                            <td
+                              valign="top"
+                              align="center"
+                              colspan="2"
+                              class="alignCenter vAlignTop"
+                            >
+                              <img
+                                src="https://d37wfh1lmbz1ur.cloudfront.net/benefit1.png"
+                                width="auto"
+                                height="40"
+                                class="commonImageStyling"
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="5" class="emptyRow12">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td
+                              valign="top"
+                              class="templateTextSmall wordBreak alignCenter vAlignTop"
+                            >
+                              Get high quality transcription &amp; recording of
+                              calls easily
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td valign="top" width="5%" style="width:5%;">&nbsp;</td>
+                      <td
+                        valign="top"
+                        align="center"
+                        width="30%"
+                        style="width:30%; text-align:left;"
+                      >
+                        <table
+                          width="100%"
+                          cellspacing="0"
+                          cellpadding="0"
+                          rowspan="0"
+                          border="0"
+                        >
+                          <tr>
+                            <td
+                              valign="top"
+                              align="center"
+                              colspan="2"
+                              class="alignCenter vAlignTop"
+                            >
+                              <img
+                                src="https://d37wfh1lmbz1ur.cloudfront.net/benefit2.png"
+                                width="auto"
+                                height="40"
+                                class="commonImageStyling"
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="5" class="emptyRow12">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td
+                              valign="top"
+                              class="templateTextSmall wordBreak alignCenter vAlignTop"
+                            >
+                              Find automated insights like talk:listen ratio, #
+                              of exchanges, themes
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td valign="top" width="5%" style="width:5%;">&nbsp;</td>
+                      <td
+                        valign="top"
+                        align="center"
+                        width="30%"
+                        style="width:30%; text-align:left;"
+                      >
+                        <table
+                          width="100%"
+                          cellspacing="0"
+                          cellpadding="0"
+                          rowspan="0"
+                          border="0"
+                        >
+                          <tr>
+                            <td
+                              valign="top"
+                              align="center"
+                              colspan="2"
+                              class="alignCenter vAlignTop"
+                            >
+                              <img
+                                src="https://d37wfh1lmbz1ur.cloudfront.net/benefit3.png"
+                                width="auto"
+                                height="40"
+                                class="commonImageStyling"
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="5" class="emptyRow12">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td
+                              valign="top"
+                              class="templateTextSmall wordBreak alignCenter vAlignTop"
+                            >
+                              Put private notes &amp; get coaching from peers,
+                              managers seamlessly
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="5" class="emptyRow24">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td colspan="5" class="rowBorderStyling">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td colspan="5" class="emptyRow20">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td colspan="5" class="templateTextSmall">
+                        In case you face any difficulties in using Call AI,
+                        please drop in an email to
+                        <a
+                          <a
+                          href="mailto:$help_email_id$"
+                          class="blueTextLinkSmall"
+                          >$help_email_id$</a
+                        >.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="5" class="emptyRow16">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td colspan="5" class="footerTextGrey">
+                        The email was sent to
+                        <a href="mailto:$user_email$" class="blueTextLinkSmall"
+                          >$user_email$</a
+                        >. You received this email because you were invited to
+                        <a
+                          href="$company_url$"
+                          target="_blank"
+                          class="blueTextLinkSmall"
+                          >$company_name$</a
+                        >.
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </body>
+</html>
