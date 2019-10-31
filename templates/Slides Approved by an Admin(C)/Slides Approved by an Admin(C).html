@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      Slides Approved by an Admin
+    </title>
+    <style>
+      .tableWrapper {
+        font-family: open sans, helvetica, arial, verdana;
+        border: 1px solid #fff;
+        background: #fff;
+      }
+
+      .tableWrapperinner {
+        background: #fff;
+        border: 1px solid #e9e9e9;
+      }
+
+      .templateBodyWrapper {
+        width: 100%;
+        border-top: 16px solid #fff;
+        border-right: 20px solid #fff;
+        border-bottom: 16px solid #fff;
+        border-left: 20px solid #fff;
+        background: #fff;
+      }
+
+      .companyName {
+        color: #606369;
+        font-family: Open Sans, helvetica, arial, verdana;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 28px;
+        text-align: left;
+      }
+
+      .intro-text {
+        color: #2a2e36;
+        font-family: Open Sans, helvetica, arial, verdana;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: left;
+      }
+
+      .intro-image-wrapper {
+        padding-left: 20px;
+        vertical-align: top;
+      }
+
+      .intro-image {
+        width: 60px;
+        height: 40;
+        border-radius: 4px;
+      }
+
+      .center-grey-area {
+        padding: 16px 24px 32px;
+        border-radius: 4px;
+        background-color: #f5f6f7;
+      }
+
+      .center-title {
+        color: #606369;
+        font-family: Open Sans, helvetica, arial, verdana;
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      .center-text {
+        color: #606369;
+        font-family: Open Sans, helvetica, arial, verdana;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 26px;
+        text-align: center;
+      }
+
+      .horizontal-line {
+        padding: 0;
+        margin: 0;
+        line-height: 1px;
+        border-top: 1px solid #e9e9e9;
+      }
+
+      .center-img {
+        margin: 0;
+        padding: 0;
+        height: 164px;
+        width: 208px;
+      }
+
+      .cta {
+        padding: 1px 10px 3px;
+        background-color: #fff;
+        border: 1px solid #4d7cc7;
+        border-radius: 16px;
+      }
+
+      .cta-inner {
+        line-height: 16px;
+        font-size: 12px;
+        display: inline-block;
+        text-decoration: none;
+        color: #4d7cc7;
+        font-weight: 600;
+        font-family: open sans, helvetica, arial, verdana;
+      }
+
+      .width120 {
+        width: 120px;
+      }
+
+      .module-description {
+        padding: 0 8px;
+      }
+
+      .context-label {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 20px;
+        color: #606369;
+        font-family: open sans, helvetica, arial, verdana;
+      }
+
+      .context-text {
+        color: #2a2e36;
+        font-size: 14px;
+        line-height: 20px;
+        font-family: open sans, helvetica, arial, verdana;
+      }
+
+      .large-black-text {
+        height: 20px;
+        width: 209px;
+        color: #000000;
+        font-family: Arial;
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      .small-grey-text {
+        color: #606369;
+        font-family: open sans, helvetica, arial, verdana;
+        font-size: 12px;
+        line-height: 16px;
+      }
+
+      .signature {
+        color: #000000;
+        font-family: open sans, helvetica, arial, verdana;
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      .alignRight {
+        text-align: right;
+      }
+
+      .alignLeft {
+        text-align: left;
+      }
+
+      .align-center {
+        text-align: center;
+      }
+
+      .footer-grey-text {
+        color: #989ca6;
+        font-family: open sans, helvetica, arial, verdana;
+        font-size: 12px;
+        line-height: 16px;
+      }
+
+      .footer-link-text {
+        font-family: open sans, helvetica, arial, verdana;
+        font-size: 12px;
+        line-height: 16px;
+        color: #4d7cc7;
+        text-decoration: none;
+      }
+
+      .bold-black-text {
+        color: #000000;
+        font-weight: 800;
+      }
+
+      .bold-green-text {
+        color: #35c759;
+        font-weight: 800;
+      }
+
+      .separator {
+        line-height: 16px;
+        padding: 8px;
+      }
+
+      .pt8 {
+        padding-top: 8px;
+      }
+
+      .emptyRow22 {
+        padding: 0;
+        margin: 0;
+        height: 22px;
+        line-height: 22px;
+      }
+
+      .emptyRow8 {
+        padding: 0;
+        margin: 0;
+        height: 8px;
+        line-height: 8px;
+      }
+
+      .emptyRow16 {
+        padding: 0;
+        margin: 0;
+        line-height: 16px;
+        height: 16px;
+      }
+
+      .emptyRow12 {
+        padding: 0;
+        margin: 0;
+        line-height: 12px;
+        height: 12px;
+      }
+
+      .emptyRow20 {
+        padding: 0;
+        margin: 0;
+        line-height: 20px;
+        height: 20px;
+      }
+
+      .emptyRow10 {
+        padding: 0;
+        margin: 0;
+        line-height: 10px;
+        height: 10px;
+      }
+
+      .emptyRow24 {
+        padding: 0;
+        margin: 0;
+        line-height: 24px;
+        height: 24px;
+      }
+
+      .emptyRow32 {
+        padding: 0;
+        margin: 0;
+        height: 32px;
+        line-height: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <table
+      width="100%"
+      cellspacing="0"
+      cellpadding="0"
+      rowspan="0"
+      colspan="0"
+      border="0"
+      class="outerTableWrapper"
+    >
+      <tbody>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>
+            <center>
+              <table
+                width="600"
+                cellspacing="0"
+                cellpadding="0"
+                bgcolor="#ffffff"
+                class="tableWrapperinner"
+              >
+                <tbody>
+                  <tr>
+                    <td>
+                      <table
+                        width="100%"
+                        cellspacing="0"
+                        cellpadding="0"
+                        class="templateBodyWrapper"
+                      >
+                        <tbody>
+                          <tr>
+                            <td
+                              colspan="3"
+                              align="left"
+                              class="companyName alignLeft"
+                            >
+                              $COMPANY_NAME$
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="3" height="32" class="emptyRow32">
+                              &nbsp;
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              class="intro-text"
+                              colspan="3"
+                              valign="top"
+                              align="left"
+                            >
+                              Hi $ASIGNEE_NAME$! Your
+                              <span class="bold-black-text">
+                                $NO_OF_SLIDESHOWS$
+                              </span>
+                              submitted recordings on slides of
+                              <span class="bold-black-text">
+                                $TOTAL_NO_OF_SLIDESHOWS$
+                              </span>
+                              Voice-over Slideshows have been
+                              <span class="bold-green-text">
+                                Approved
+                              </span>
+                              by $APPROVED_BY$.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="3" height="24" class="emptyRow24">
+                              &nbsp;
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="list-table-wrapper">
+                              <center>
+                                <table
+                                  width="100%"
+                                  cellspacing="0"
+                                  cellpadding="0"
+                                  class="list-table"
+                                >
+                                  <tbody>
+                                    <tr>
+                                      <td colspan="3">
+                                        <% var i = 0 %> <% for(i=0; i <
+                                        $SLIDESHOWS.length$ && i < 50; i++) { %>
+                                      </td>
+                                    </tr>
+                                    <!-- Row to be repeated START -->
+                                    <tr>
+                                      <td
+                                        height="40"
+                                        width="60"
+                                        valign="top"
+                                        align="left"
+                                        class="alignLeft"
+                                      >
+                                        <img
+                                          height="40"
+                                          width="60"
+                                          src="$SLIDESHOWS[i].attachment$"
+                                          class="intro-image"
+                                          alt="Task attachments"
+                                        />
+                                      </td>
+                                      <td
+                                        valign="top"
+                                        align="left"
+                                        class="alignLeft module-description"
+                                      >
+                                        <table
+                                          width="100%"
+                                          cellspacing="0"
+                                          cellpadding="0"
+                                        >
+                                          <tbody>
+                                            <tr>
+                                              <td
+                                                valign="top"
+                                                align="left"
+                                                class="alignLeft large-black-text"
+                                              >
+                                                $SLIDESHOWS[i].title$
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td
+                                                align="left"
+                                                valign="top"
+                                                class="alignLeft small-grey-text"
+                                              >
+                                                $SLIDESHOWS[i].type$
+                                                <span class="separator">
+                                                  &bull;
+                                                </span>
+                                                Due date:
+                                                $SLIDESHOWS[i].dueDate$
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+
+                                      <td
+                                        width="120"
+                                        valign="top"
+                                        align="right"
+                                        class="alignRight width120 pt8"
+                                      >
+                                        <table
+                                          width="auto"
+                                          border="0"
+                                          cellpadding="0"
+                                          align="center"
+                                          cellspacing="0"
+                                          style="display:inline-block"
+                                        >
+                                          <tbody>
+                                            <tr>
+                                              <td
+                                                align="center"
+                                                valign="middle"
+                                              >
+                                                <a
+                                                  href="$SLIDESHOWS[i].URL$"
+                                                  style="word-wrap:normal; color:#4d7cc7; word-break:normal; white-space:nowrap; display:block; text-decoration:none"
+                                                  target="_blank"
+                                                >
+                                                  <table
+                                                    border="0"
+                                                    cellspacing="0"
+                                                    cellpadding="0"
+                                                    width="auto"
+                                                  >
+                                                    <tr>
+                                                      <td
+                                                        class="cta"
+                                                        valign="middle"
+                                                        align="center"
+                                                        bgcolor="#ffffff"
+                                                      >
+                                                        <a
+                                                          class="cta-inner"
+                                                          href="$SLIDESHOWS[i].URL$"
+                                                          target="_blank"
+                                                        >
+                                                          Go To Slideshow
+                                                        </a>
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td
+                                        colspan="3"
+                                        height="8"
+                                        class="emptyRow8"
+                                      >
+                                        &nbsp;
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td colspan="3" class="horizontal-line">
+                                        &nbsp;
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td
+                                        colspan="3"
+                                        height="10"
+                                        class="emptyRow10"
+                                      >
+                                        &nbsp;
+                                      </td>
+                                    </tr>
+                                    <!-- Row to be repeated END -->
+                                    <tr>
+                                      <td><% } %></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </center>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" height="22" class="emptyRow22">
+                              &nbsp;
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" class="signature" align="left">
+                              Thanks, <br />
+                              $params.fromName$ <br />
+                              $company.companyName$
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" height="24" class="emptyRow24">
+                              &nbsp;
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" class="horizontal-line">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" height="20" class="emptyRow20">
+                              &nbsp;
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td
+                              colspan="2"
+                              class="footer-grey-text"
+                              align="left"
+                            >
+                              The email was sent to
+                              <a
+                                href="mailto:$user_email$"
+                                class="footer-link-text"
+                              >
+                                $user_email$
+                              </a>
+                              . You received this email because you were invited
+                              to
+                              <a
+                                href="$company_url$"
+                                target="_blank"
+                                class="footer-link-text"
+                              >
+                                $company_name$
+                              </a>
+                              .
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </center>
+          </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
