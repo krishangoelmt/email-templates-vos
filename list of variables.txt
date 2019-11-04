@@ -25,7 +25,6 @@ Submission Pending by Assignee(Upload and Record)(multiple admins)
 templateID: _vos_slide_record_multiple_admins_multiple_slideshow_multiple_type_submission_pending
 https://projects.invisionapp.com/d/main#/console/18191940/391258601/preview
 
-
 	$COMPANY_NAME$
 	$ASIGNEE_NAME$
 	$NO_OF_SLIDES$
@@ -92,3 +91,22 @@ https://projects.invisionapp.com/d/main#/console/18191940/388856895/comments
 
 
 
+Submission_Pending_By_Assignee(R)
+templateID: _vos_slide_record_single_slideshow_submission_pending
+https://projects.invisionapp.com/d/main#/console/18191940/386302170/preview
+
+	$COMPANY_NAME$
+	$ASIGNEE_NAME$
+	$NO_OF_SLIDES$
+	$TASK_NAME$
+	$URL_TASK_IMAGE$
+	$DUE_DATE$
+	$CENTER_IMAGE_URL$
+	$SLIDESHOW_URL$
+	$SLIDESHOW_URL$
+	$CONTEXT$
+	$params.fromName$
+	$company.companyName$
+	$user_email$
+	$user_email$
+	$company_url$
