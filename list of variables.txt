@@ -193,3 +193,27 @@ https://projects.invisionapp.com/d/main#/console/18191940/386303907/preview
 	$user_email$
 	$company_url$
 	$company_name$
+
+
+
+Asked_To_Re-record_by_Admin(U+R)
+templateID: _vos_slide_learner_upload_record_re_record
+https://projects.invisionapp.com/d/main#/console/18191940/386304057/preview
+
+	$COMPANY_NAME$
+	$ASIGNEE_NAME$
+	$NO_OF_SLIDES$
+	$TASK_NAME$
+	$ASSIGNED_BY$
+	$URL_TASK_IMAGE$
+	$CENTER_IMAGE_URL$
+	$SLIDESHOW_URL$
+	$SLIDESHOW_URL$
+	$NOTES$
+	$CONTEXT$
+	$params.fromName$
+	$company.companyName$
+	$user_email$
+	$user_email$
+	$company_url$
+	$company_name$
