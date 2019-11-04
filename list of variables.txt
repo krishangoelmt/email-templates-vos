@@ -171,3 +171,25 @@ https://projects.invisionapp.com/d/main#/console/18191940/386303908/preview
 	$user_email$
 	$user_email$
 	$company_url$
+
+
+
+Task_submission_pending_by_Assignee(U+R)Multiple
+templateID: _vos_task_single_admin_multiple_slideshow_submission_pending
+https://projects.invisionapp.com/d/main#/console/18191940/386303907/preview
+
+	$COMPANY_NAME$
+	$ASIGNEE_NAME$
+	$NO_OF_SLIDESHOWS$
+	$SLIDESHOWS.length$
+	$SLIDESHOWS[i].attachment$
+	$SLIDESHOWS[i].title$
+	$SLIDESHOWS[i].dueDate$
+	$SLIDESHOWS[i].URL$
+	$SLIDESHOWS[i].URL$
+	$params.fromName$
+	$company.companyName$
+	$user_email$
+	$user_email$
+	$company_url$
+	$company_name$
