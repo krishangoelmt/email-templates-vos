@@ -1,0 +1,21 @@
+Slides Received by Assignee (Record Only)
+https://projects.invisionapp.com/d/main#/console/18191940/386297802/preview
+templateID:_vos_new_slide_record_assignment
+
+	$company_name$
+	$ASIGNEE_NAME$
+	$NO_OF_SLIDES$
+	$TASK_NAME$
+	$URL_TASK_IMAGE$
+	$ASSNEE_NAME$
+	$DUE_DATE$
+	$CENTER_IMAGE_URL$
+	$SLIDESHOW_URL$
+	$CONTEXT$
+	$params.fromName$
+	$company.companyName$
+	$user_email$
+	$company_url$
+
+
+

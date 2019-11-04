@@ -192,6 +192,11 @@
         width: auto;
       }
 
+      .bold-black-text {
+        color: #000000;
+        font-weight: 800;
+      }
+
       .context {
         color: #606369;
         font-family: open sans, helvetica, arial, verdana;
@@ -264,8 +269,10 @@
                     <tr>
                       <td colspan="1" class="open-text" align="left">
                         Hi $ASIGNEE_NAME$! You’ve been assigned to record on
-                        $NO_OF_SLIDES$ slides of a Voice-over Slideshow
-                        ‘$TASK_NAME$’.
+                        <span class="bold-black-text">
+                          $NO_OF_SLIDES$
+                        </span>
+                        slides of a Voice-over Slideshow ‘$TASK_NAME$’.
                       </td>
                       <td
                         class="open-image-wrap"
