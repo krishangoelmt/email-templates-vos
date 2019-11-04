@@ -150,5 +150,24 @@ https://projects.invisionapp.com/d/main#/console/18191940/386303131/preview
 	$user_email$
 	$user_email$
 	$company_url$
-	$company_name$
 
+
+
+Task_submission_pending_by_Assignee(U+R)
+templateID: _vos_task_single_slideshow_upload_record_submission_pending
+https://projects.invisionapp.com/d/main#/console/18191940/386303908/preview
+
+	$COMPANY_NAME$
+	$ASIGNEE_NAME$
+	$TASK_NAME$
+	$URL_TASK_IMAGE$
+	$DUE_DATE$
+	$CENTER_IMAGE_URL$
+	$SLIDESHOW_URL$
+	$SLIDESHOW_URL$
+	$CONTEXT$
+	$params.fromName$
+	$company.companyName$
+	$user_email$
+	$user_email$
+	$company_url$
