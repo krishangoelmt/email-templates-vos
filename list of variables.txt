@@ -293,3 +293,26 @@ https://projects.invisionapp.com/d/main#/console/18191940/388857425/preview
 	$user_email$
 	$company_url$
 	$company_name$
+
+
+
+Slides Approved by multiple Admins(C)
+templateID: _vos_slide_multiple_admin_multiple_slideshow_multiple_type_approved
+https://projects.invisionapp.com/d/main#/console/18191940/391049017/preview
+
+	$COMPANY_NAME$
+	$ASIGNEE_NAME$
+	$NO_OF_SLIDESHOWS$
+	$TOTAL_NO_OF_SLIDESHOWS$
+	$SLIDESHOWS.length$
+	$SLIDESHOWS[i].attachment$
+	$SLIDESHOWS[i].title$
+	$SLIDESHOWS[i].type$
+	$SLIDESHOWS[i].dueDate$
+	$SLIDESHOWS[i].URL$
+	$SLIDESHOWS[i].URL$
+	$company.companyName$
+	$user_email$
+	$user_email$
+	$company_url$
+	$company_name$
