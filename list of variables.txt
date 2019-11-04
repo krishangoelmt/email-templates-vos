@@ -110,3 +110,27 @@ https://projects.invisionapp.com/d/main#/console/18191940/386302170/preview
 	$user_email$
 	$user_email$
 	$company_url$
+
+
+
+
+
+Submission_Pending_by_Assignee(R)Multiple
+https://projects.invisionapp.com/d/main#/console/18191940/386302169/preview
+templateID: _vos_slide_record_single_admin_multiple_slideshow_submission_pending
+
+	$COMPANY_NAME$
+	$ASIGNEE_NAME$
+	$NO_OF_SLIDESHOWS$
+	$SLIDESHOWS.length$
+	$SLIDESHOWS[i].attachment$
+	$SLIDESHOWS[i].title$
+	$SLIDESHOWS[i].dueDate$
+	$SLIDESHOWS[i].URL$
+	$SLIDESHOWS[i].URL$
+	$params.fromName$
+	$company.companyName$
+	$user_email$
+	$user_email$
+	$company_url$
+	$company_name$
