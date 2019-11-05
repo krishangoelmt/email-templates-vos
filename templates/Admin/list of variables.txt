@@ -1,0 +1,23 @@
+Slides submitted by Assignee (Record Only)
+templateId: _vos_admin_record_slide_submitted
+https://projects.invisionapp.com/d/main#/console/18359198/388856587/preview
+
+	$TASK_NAME$
+	$COMPANY_NAME$
+	$ASIGNEE_NAME$
+	$NO_OF_SLIDES$
+	$TASK_NAME$
+	$ASSIGNEE_NAME$
+	$URL_TASK_IMAGE$
+	$NO_OF_SLIDES_PENDING$
+	$DUE_DATE$
+	$CENTER_IMAGE_URL$
+	$SLIDESHOW_URL$
+	$SLIDESHOW_URL$
+	$CONTEXT$
+	$PARAMS.FROMNAME$
+	$COMPANY.COMPANYNAME$
+	$USER_EMAIL$
+	$USER_EMAIL$
+	$COMPANY_URL$
+	$COMPANY_NAME$
