@@ -2,8 +2,8 @@
 Email templates for voice-over slideshow collaboration.
 
 Email templates for different flows.
-- [Admin workflow](www.somelink.com)
-- [SME workflow](www.somelink.com)
+- [Admin workflow](https://invis.io/DSTOJJRB69Z)
+- [SME workflow](https://invis.io/UGTBUF68FK4)
 
 ## Live template preview
 Preview templates in your browser. A live preview is hosted at [projectpage](https://www.google.com).
