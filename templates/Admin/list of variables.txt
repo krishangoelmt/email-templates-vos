@@ -24,7 +24,7 @@ https://projects.invisionapp.com/d/main#/console/18359198/388856587/preview
 
 
 
-Slides submitted by Assignee (Record Only) (Multiple)
+Slides submitted by Assignee (Record Only) (plural)
 templateId: _vos_admin_record_multiple_slide_submitted
 https://projects.invisionapp.com/d/main#/console/18359198/391868673/preview
 
@@ -73,8 +73,8 @@ https://invis.io/DSTOJJRB69Z#/388856621_VOS-1440-Admin-Emails-Record_Only-Slides
 
 
 
-Slides declined by Assignee (Record Only) Multiple
-templateId: _vos_record_slide_multiple_slide_single_admin_record_only_declined
+Slides declined by Assignee (Record Only) plural
+templateId: _vos_admin_record_slide_multiple_slide_single_admin_record_only_declined
 https://invis.io/DSTOJJRB69Z#/389107535_VOS-1440-Admin-Emails-Record_Only-Slides_declined_multiple
 
 	$TASK_NAME$
@@ -94,3 +94,16 @@ https://invis.io/DSTOJJRB69Z#/389107535_VOS-1440-Admin-Emails-Record_Only-Slides
 	$USER_EMAIL$
 	$COMPANY_URL$
 	$COMPANY_NAME$
+
+
+
+Task submitted by Assignee (Upload and Record)
+templateId: _vos_admin_record_slide_task_single_admin_upload_record_submitted
+https://invis.io/DSTOJJRB69Z#/388856649_VOS-1440-Admin-Emails-Upload_Record-Task_submitted
+
+
+
+
+
+
+	
