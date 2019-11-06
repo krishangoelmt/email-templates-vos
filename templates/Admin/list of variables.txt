@@ -101,6 +101,23 @@ Task submitted by Assignee (Upload and Record)
 templateId: _vos_admin_record_slide_task_single_admin_upload_record_submitted
 https://invis.io/DSTOJJRB69Z#/388856649_VOS-1440-Admin-Emails-Upload_Record-Task_submitted
 
+	$TASK_NAME$
+	$COMPANY_NAME$
+	$ASIGNEE_NAME$
+	$TASK_NAME$
+	$ASSIGNEE_NAME$
+	$URL_TASK_IMAGE$
+	$NO_OF_SLIDES_SUBMITTED$
+	$CENTER_IMAGE_URL$
+	$SLIDESHOW_URL$
+	$SLIDESHOW_URL$
+	$CONTEXT$
+	$PARAMS.FROMNAME$
+	$COMPANY.COMPANYNAME$
+	$USER_EMAIL$
+	$USER_EMAIL$
+	$COMPANY_URL$
+	$COMPANY_NAME$
 
 
 
