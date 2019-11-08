@@ -1,26 +1,22 @@
 Slides submitted by Assignee (Record Only)
-templateId: _vos_admin_record_slide_submitted
+templateId: _vos_admin_record_slide_smitted
 https://projects.invisionapp.com/d/main#/console/18359198/388856587/preview
 
 	$TASK_NAME$
 	$COMPANY_NAME$
 	$ASIGNEE_NAME$
 	$NO_OF_SLIDES$
-	$TASK_NAME$
 	$ASSIGNEE_NAME$
 	$URL_TASK_IMAGE$
 	$NO_OF_SLIDES_PENDING$
 	$DUE_DATE$
 	$CENTER_IMAGE_URL$
 	$SLIDESHOW_URL$
-	$SLIDESHOW_URL$
 	$CONTEXT$
 	$PARAMS.FROMNAME$
 	$COMPANY.COMPANYNAME$
 	$USER_EMAIL$
-	$USER_EMAIL$
 	$COMPANY_URL$
-	$COMPANY_NAME$
 
 
 
@@ -32,20 +28,16 @@ https://projects.invisionapp.com/d/main#/console/18359198/391868673/preview
 	$COMPANY_NAME$
 	$ASIGNEE_NAME$
 	$NO_OF_SLIDES$
-	$TASK_NAME$
 	$ASSIGNEE_NAME$
 	$URL_TASK_IMAGE$
 	$NO_OF_SLIDES_PENDING$
 	$DUE_DATE$
 	$CENTER_IMAGE_URL$
 	$SLIDESHOW_URL$
-	$SLIDESHOW_URL$
 	$CONTEXT$
 	$PARAMS.FROMNAME$
 	$COMPANY.COMPANYNAME$
 	$USER_EMAIL$
-	$USER_EMAIL$
-	$COMPANY_URL$
 
 
 
@@ -57,19 +49,15 @@ https://invis.io/DSTOJJRB69Z#/388856621_VOS-1440-Admin-Emails-Record_Only-Slides
 	$COMPANY_NAME$
 	$ASIGNEE_NAME$
 	$NO_OF_SLIDES$
-	$TASK_NAME$
 	$ASSIGNEE_NAME$
 	$URL_TASK_IMAGE$
 	$CENTER_IMAGE_URL$
-	$SLIDESHOW_URL$
 	$SLIDESHOW_URL$
 	$CONTEXT$
 	$PARAMS.FROMNAME$
 	$COMPANY.COMPANYNAME$
 	$USER_EMAIL$
-	$USER_EMAIL$
 	$COMPANY_URL$
-	$COMPANY_NAME$
 
 
 
@@ -81,19 +69,15 @@ https://invis.io/DSTOJJRB69Z#/389107535_VOS-1440-Admin-Emails-Record_Only-Slides
 	$COMPANY_NAME$
 	$ASIGNEE_NAME$
 	$NO_OF_SLIDES$
-	$TASK_NAME$
 	$ASSIGNEE_NAME$
 	$URL_TASK_IMAGE$
 	$CENTER_IMAGE_URL$
-	$SLIDESHOW_URL$
 	$SLIDESHOW_URL$
 	$CONTEXT$
 	$PARAMS.FROMNAME$
 	$COMPANY.COMPANYNAME$
 	$USER_EMAIL$
-	$USER_EMAIL$
 	$COMPANY_URL$
-	$COMPANY_NAME$
 
 
 
@@ -104,20 +88,16 @@ https://invis.io/DSTOJJRB69Z#/388856649_VOS-1440-Admin-Emails-Upload_Record-Task
 	$TASK_NAME$
 	$COMPANY_NAME$
 	$ASIGNEE_NAME$
-	$TASK_NAME$
 	$ASSIGNEE_NAME$
 	$URL_TASK_IMAGE$
 	$NO_OF_SLIDES_SUBMITTED$
 	$CENTER_IMAGE_URL$
 	$SLIDESHOW_URL$
-	$SLIDESHOW_URL$
 	$CONTEXT$
 	$PARAMS.FROMNAME$
 	$COMPANY.COMPANYNAME$
 	$USER_EMAIL$
-	$USER_EMAIL$
 	$COMPANY_URL$
-	$COMPANY_NAME$
 
 
 
@@ -128,11 +108,9 @@ https://invis.io/DSTOJJRB69Z#/388856744_VOS-1440-Admin-Emails-Upload_Record-Task
 	$TASK_NAME$
 	$COMPANY_NAME$
 	$ASIGNEE_NAME$
-	$TASK_NAME$
 	$ASSIGNEE_NAME$
 	$URL_TASK_IMAGE$
 	$CENTER_IMAGE_URL$
-	$SLIDESHOW_URL$
 	$SLIDESHOW_URL$
 	$CONTEXT$
 	$PARAMS.FROMNAME$
@@ -140,5 +118,15 @@ https://invis.io/DSTOJJRB69Z#/388856744_VOS-1440-Admin-Emails-Upload_Record-Task
 	$USER_EMAIL$
 	$USER_EMAIL$
 	$COMPANY_URL$
-	$COMPANY_NAME$
 	
+
+
+
+Slides declined by Assignee (Record Only) Multiple
+templateId: _vos_admin_record_slide_multiple_slideshow_single_admin_record_only_submitted
+https://invis.io/DSTOJJRB69Z#/388856588_VOS-1440-Admin-Emails-Submission_By_assignee-Clubbed
+
+PENDING
+
+
+
