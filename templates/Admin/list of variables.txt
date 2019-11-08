@@ -1,5 +1,5 @@
 Slides submitted by Assignee (Record Only)
-templateId: _vos_admin_record_slide_smitted
+templateId: _vos_admin_record_slide_submitted
 https://projects.invisionapp.com/d/main#/console/18359198/388856587/preview
 
 	$TASK_NAME$
