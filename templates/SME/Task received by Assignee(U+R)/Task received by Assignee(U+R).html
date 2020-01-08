@@ -229,7 +229,7 @@
                         <tbody>
                           <tr>
                             <td colspan="2" class="companyName alignLeft">
-                              $COMPANY_NAME$
+                              $companyInfo.companyName$
                             </td>
                           </tr>
                           <tr>
@@ -244,12 +244,12 @@
                               valign="top"
                               align="left"
                             >
-                              Hi $ASIGNEE_NAME$! You've been assigned to
+                              Hi $userInfo.name$! You've been assigned to
                               <span class="bold-black-text">
                                 upload slides and record
                               </span>
-                              on a Voice-over Slideshow ‘$TASK_NAME$’ by
-                              $ASSIGNED_BY$.
+                              on a Voice-over Slideshow ‘$taskInfo.taskName$’ by
+                              $params.fromName$.
                             </td>
                             <td
                               colspan="1"
@@ -260,7 +260,7 @@
                               <img
                                 height="70"
                                 width="124"
-                                src="$URL_TASK_IMAGE$"
+                                src="$taskInfo.taskImageUrl$"
                                 class="intro-image"
                                 alt="Task attachments"
                               />
@@ -296,7 +296,7 @@
                                     class="center-text align-center"
                                     align="center"
                                   >
-                                    $DUE_DATE$
+                                    $taskInfo.dueDate$
                                   </td>
                                 </tr>
                                 <tr>
@@ -326,7 +326,7 @@
                                   >
                                     <img
                                       align="center"
-                                      src="$CENTER_IMAGE_URL$"
+                                      src="$notificationInfo.centerImageUrl$"
                                       alt="Task pending illustration"
                                       width="208"
                                       height="160"
@@ -361,7 +361,7 @@
                                         <tr>
                                           <td align="center" valign="middle">
                                             <a
-                                              href="$SLIDESHOW_URL$"
+                                              href="$taskInfo.taskUrl$"
                                               style="word-wrap:normal; color:#4d7cc7; word-break:normal; white-space:nowrap; display:block; text-decoration:none"
                                               target="_blank"
                                             >
@@ -375,7 +375,7 @@
                                                   <td class="cta">
                                                     <a
                                                       class="cta-inner"
-                                                      href="$SLIDESHOW_URL$"
+                                                      href="$taskInfo.taskUrl$"
                                                       target="_blank"
                                                       >Go To Task</a
                                                     >
@@ -411,7 +411,7 @@
                           </tr>
                           <tr>
                             <td colspan="2" class="context-text" align="left">
-                              $CONTEXT$
+                              $taskInfo.context$
                             </td>
                           </tr>
 
@@ -424,7 +424,7 @@
                             <td colspan="2" class="signature" align="left">
                               Thanks, <br />
                               $params.fromName$ <br />
-                              $company.companyName$
+                              $companyInfo.companyName$
                             </td>
                           </tr>
                           <tr>
@@ -449,16 +449,16 @@
                             >
                               The email was sent to
                               <a
-                                href="mailto:$user_email$"
+                                href="mailto:$userInfo.email$"
                                 class="footer-link-text"
-                                >$user_email$</a
+                                >$userInfo.email$</a
                               >. You received this email because you were
                               invited to
                               <a
-                                href="$company_url$"
+                                href="$companyInfo.companyLink$"
                                 target="_blank"
                                 class="footer-link-text"
-                                >$company_name$</a
+                                >$companyInfo.companyName$</a
                               >.
                             </td>
                           </tr>

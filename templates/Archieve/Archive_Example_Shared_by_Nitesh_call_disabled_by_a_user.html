@@ -261,7 +261,7 @@
                   >
                     <tr>
                       <td colspan="5" class="templateLogoText alignLeft">
-                        $company_name$
+                        $companyInfo.companyName$
                       </td>
                     </tr>
                     <tr>
@@ -558,14 +558,14 @@
                     <tr>
                       <td colspan="5" class="footerTextGrey">
                         The email was sent to
-                        <a href="mailto:$user_email$" class="blueTextLinkSmall"
-                          >$user_email$</a
+                        <a href="mailto:$userInfo.email$" class="blueTextLinkSmall"
+                          >$userInfo.email$</a
                         >. You received this email because you were invited to
                         <a
-                          href="$company_url$"
+                          href="$companyInfo.companyLink$"
                           target="_blank"
                           class="blueTextLinkSmall"
-                          >$company_name$</a
+                          >$companyInfo.companyName$</a
                         >.
                       </td>
                     </tr>

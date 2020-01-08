@@ -307,7 +307,7 @@
                               align="left"
                               class="companyName alignLeft"
                             >
-                              $COMPANY_NAME$
+                              $companyInfo.companyName$
                             </td>
                           </tr>
                           <tr>
@@ -322,19 +322,19 @@
                               valign="top"
                               align="left"
                             >
-                              Hi $ASIGNEE_NAME$! Slides assigned by you to
+                              Hi $userInfo.name$! Slides assigned by you to
                               <span class="bold-black-text">
                                 record
                               </span>
                               on
                               <span class="bold-black-text">
-                                $NO_OF_SLIDESHOWS$
+                                $taskInfo.length$
                               </span>
                               Voice-over Slideshows have been
                               <span class="bold-black-text">
                                 submitted
                               </span>
-                              by $SUBMITTED_BY$.
+                              by $params.fromName$.
                             </td>
                           </tr>
                           <tr>
@@ -355,7 +355,7 @@
                                     <tr>
                                       <td colspan="3" class="hidden">
                                         <% var i = 0 %> <% for(i=0; i <
-                                        $SLIDESHOWS.length$ && i < 50; i++) { %>
+                                        $taskInfo.length$ && i < 50; i++) { %>
                                       </td>
                                     </tr>
                                     <!-- Row to be repeated START -->
@@ -370,7 +370,7 @@
                                         <img
                                           height="40"
                                           width="60"
-                                          src="$SLIDESHOWS[i].attachment$"
+                                          src="$taskInfo[i].taskImageUrl$"
                                           class="intro-image"
                                           alt="Task attachments"
                                         />
@@ -392,7 +392,7 @@
                                                 align="left"
                                                 class="alignLeft large-black-text"
                                               >
-                                                $SLIDESHOWS[i].title$
+                                                $taskInfo[i].taskName$
                                               </td>
                                             </tr>
                                             <tr>
@@ -405,7 +405,7 @@
                                                 <span class="separator">
                                                   &bull;
                                                 </span>
-                                                $SLIDESHOWS[i].slideCount$
+                                               $taskInfo[i].noOfSlidesSubmitted$
                                                 Slides
                                               </td>
                                             </tr>
@@ -434,7 +434,7 @@
                                                 valign="middle"
                                               >
                                                 <a
-                                                  href="$SLIDESHOWS[i].URL$"
+                                                  href="$taskInfo[i].taskUrl$"
                                                   style="word-wrap:normal; color:#4d7cc7; word-break:normal; white-space:nowrap; display:block; text-decoration:none"
                                                   target="_blank"
                                                 >
@@ -453,7 +453,7 @@
                                                       >
                                                         <a
                                                           class="cta-inner"
-                                                          href="$SLIDESHOWS[i].URL$"
+                                                          href="$taskInfo[i].taskUrl$"
                                                           target="_blank"
                                                         >
                                                           Go To Slideshow
@@ -508,8 +508,8 @@
                           <tr>
                             <td colspan="2" class="signature" align="left">
                               Thanks, <br />
-                              $SUBMITTED_BY$<br />
-                              $company.companyName$
+                              $params.fromName$<br />
+                              $companyInfo.companyName$
                             </td>
                           </tr>
                           <tr>
@@ -534,19 +534,19 @@
                             >
                               The email was sent to
                               <a
-                                href="mailto:$user_email$"
+                                href="mailto:$userInfo.email$"
                                 class="footer-link-text"
                               >
-                                $user_email$
+                                $userInfo.email$
                               </a>
                               . You received this email because you were invited
                               to
                               <a
-                                href="$company_url$"
+                                href="$companyInfo.companyLink$"
                                 target="_blank"
                                 class="footer-link-text"
                               >
-                                $company_name$
+                                $companyInfo.companyName$
                               </a>
                               .
                             </td>
