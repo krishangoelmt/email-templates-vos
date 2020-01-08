@@ -7,7 +7,6 @@ https://projects.invisionapp.com/d/main#/console/18191940/386297802/preview
 	$taskInfo.noOfSlides$
 	$taskInfo.taskName$
 	$taskInfo.taskImageUrl$
-	$ASSNEE_NAME$
 	$taskInfo.dueDate$
 	$notificationInfo.centerImageUrl$
 	$taskInfo.taskUrl$
@@ -99,7 +98,7 @@ https://projects.invisionapp.com/d/main#/console/18191940/391258601/preview
 	$notificationInfo.centerImageUrl$
 	$taskInfo.taskUrl$
 	$taskInfo.taskUrl$
-	$NOTES$
+	$taskInfo.notes$
 	$taskInfo.context$
 	$params.fromName$
 	$companyInfo.companyName$
@@ -122,7 +121,7 @@ https://projects.invisionapp.com/d/main#/console/18191940/386302867/comments
 	$notificationInfo.centerImageUrl$
 	$taskInfo.taskUrl$
 	$taskInfo.taskUrl$
-	$NOTES$
+	$taskInfo.notes$
 	$taskInfo.context$
 	$params.fromName$
 	$companyInfo.companyName$
@@ -209,7 +208,7 @@ https://projects.invisionapp.com/d/main#/console/18191940/386304057/preview
 	$notificationInfo.centerImageUrl$
 	$taskInfo.taskUrl$
 	$taskInfo.taskUrl$
-	$NOTES$
+	$taskInfo.notes$
 	$taskInfo.context$
 	$params.fromName$
 	$companyInfo.companyName$
@@ -226,13 +225,11 @@ https://projects.invisionapp.com/d/main#/console/18191940/388856963/preview
 
 	$companyInfo.companyName$
 	$userInfo.name$
-	$APPROVED_NO_OF_SLIDES$
-	$TOTAL_NO_OF_SLIDES$
+	$notificationInfo.noOfSlidesApproved$
+	$notificationInfo.noOfSlidesSubmitted$
 	$taskInfo.taskName$
-	$APPROVED_BY$
 	$taskInfo.taskImageUrl$
-	$APPROVED_NO_OF_SLIDES$
-	$PENDING_NO_OF_SLIDES$
+	$notificationInfo.noOfSlidesPending$
 	$notificationInfo.centerImageUrl$
 	$taskInfo.taskUrl$
 	$taskInfo.taskUrl$
@@ -252,9 +249,6 @@ https://projects.invisionapp.com/d/main#/console/18191940/388856966/preview
 
 	$companyInfo.companyName$
 	$userInfo.name$
-	$taskInfo.length$
-	$TOTAL_NO_OF_SLIDESHOWS$
-	$APPROVED_BY$
 	$taskInfo.length$
 	$taskInfo[i].taskImageUrl$
 	$taskInfo[i].taskName$
@@ -277,12 +271,11 @@ https://projects.invisionapp.com/d/main#/console/18191940/388857425/preview
 
 	$companyInfo.companyName$
 	$userInfo.name$
-	$APPROVED_NO_OF_SLIDES$
-	$TOTAL_NO_OF_SLIDES$
+	$notificationInfo.noOfSlidesApproved$
+	$taskInfo.length$
 	$taskInfo.taskName$
 	$taskInfo.taskImageUrl$
-	$APPROVED_NO_OF_SLIDES$
-	$PENDING_NO_OF_SLIDES$
+	$notificationInfo.noOfSlidesPending$
 	$notificationInfo.centerImageUrl$
 	$taskInfo.taskUrl$
 	$taskInfo.taskUrl$
@@ -303,7 +296,6 @@ https://projects.invisionapp.com/d/main#/console/18191940/391049017/preview
 	$companyInfo.companyName$
 	$userInfo.name$
 	$taskInfo.length$
-	$TOTAL_NO_OF_SLIDESHOWS$
 	$taskInfo.length$
 	$taskInfo[i].taskImageUrl$
 	$taskInfo[i].taskName$
