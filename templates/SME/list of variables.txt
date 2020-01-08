@@ -272,7 +272,7 @@ https://projects.invisionapp.com/d/main#/console/18191940/388857425/preview
 	$companyInfo.companyName$
 	$userInfo.name$
 	$notificationInfo.noOfSlidesApproved$
-	$taskInfo.length$
+	$notificationInfo.noOfSlidesSubmitted$
 	$taskInfo.taskName$
 	$taskInfo.taskImageUrl$
 	$notificationInfo.noOfSlidesPending$
