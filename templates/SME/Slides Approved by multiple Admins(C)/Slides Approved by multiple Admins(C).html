@@ -301,7 +301,7 @@
                               align="left"
                               class="companyName alignLeft"
                             >
-                              $COMPANY_NAME$
+                            $companyInfo.companyName$
                             </td>
                           </tr>
                           <tr>
@@ -316,13 +316,13 @@
                               valign="top"
                               align="left"
                             >
-                              Hi $ASIGNEE_NAME$! Your
+                              Hi $userInfo.name$! Your
                               <span class="bold-black-text">
-                                $NO_OF_SLIDESHOWS$
+                                $notificationInfo.totalNoOfSlidesApproved$
                               </span>
                               submitted recordings on slides of
                               <span class="bold-black-text">
-                                $TOTAL_NO_OF_SLIDESHOWS$
+                                $taskInfo.length$
                               </span>
                               Voice-over Slideshows have been
                               <span class="bold-green-text">
@@ -346,12 +346,12 @@
                                   class="list-table"
                                 >
                                   <tbody>
-                                    <!-- <tr>
+                                    <tr>
                                       <td colspan="3">
                                         <% var i = 0 %> <% for(i=0; i <
-                                        $SLIDESHOWS.length$ && i < 50; i++) { %>
+                                          $taskInfo.length$ && i < 50; i++) { %>
                                       </td>
-                                    </tr> -->
+                                    </tr>
                                     <!-- Row to be repeated START -->
                                     <tr>
                                       <td
@@ -364,7 +364,7 @@
                                         <img
                                           height="40"
                                           width="60"
-                                          src="$SLIDESHOWS[i].attachment$"
+                                          src="$taskInfo[i].taskImageUrl$"
                                           class="intro-image"
                                           alt="Task attachments"
                                         />
@@ -386,7 +386,7 @@
                                                 align="left"
                                                 class="alignLeft large-black-text"
                                               >
-                                                $SLIDESHOWS[i].title$
+                                              $taskInfo[i].taskName$
                                               </td>
                                             </tr>
                                             <tr>
@@ -395,12 +395,12 @@
                                                 valign="top"
                                                 class="alignLeft small-grey-text"
                                               >
-                                                $SLIDESHOWS[i].type$
+                                              $taskInfo[i].taskType$
                                                 <span class="separator">
                                                   &bull;
                                                 </span>
                                                 Due date:
-                                                $SLIDESHOWS[i].dueDate$
+                                                $taskInfo[i].dueDate$
                                               </td>
                                             </tr>
                                           </tbody>
@@ -428,7 +428,7 @@
                                                 valign="middle"
                                               >
                                                 <a
-                                                  href="$SLIDESHOWS[i].URL$"
+                                                  href="$taskInfo[i].taskUrl$"
                                                   style="word-wrap:normal; color:#4d7cc7; word-break:normal; white-space:nowrap; display:block; text-decoration:none"
                                                   target="_blank"
                                                 >
@@ -447,7 +447,7 @@
                                                       >
                                                         <a
                                                           class="cta-inner"
-                                                          href="$SLIDESHOWS[i].URL$"
+                                                          href="$taskInfo[i].taskUrl$"
                                                           target="_blank"
                                                         >
                                                           Go To Slideshow
@@ -486,9 +486,9 @@
                                       </td>
                                     </tr>
                                     <!-- Row to be repeated END -->
-                                    <!-- <tr>
+                                    <tr>
                                       <td><% } %></td>
-                                    </tr> -->
+                                    </tr>
                                   </tbody>
                                 </table>
                               </center>
@@ -502,7 +502,7 @@
                           <tr>
                             <td colspan="2" class="signature" align="left">
                               Thanks, <br />
-                              $company.companyName$
+                              $companyInfo.companyName$
                             </td>
                           </tr>
                           <tr>
@@ -527,19 +527,19 @@
                             >
                               The email was sent to
                               <a
-                                href="mailto:$user_email$"
+                                href="mailto:$userInfo.email$"
                                 class="footer-link-text"
                               >
-                                $user_email$
+                              $userInfo.email$
                               </a>
                               . You received this email because you were invited
                               to
                               <a
-                                href="$company_url$"
+                                href="$companyInfo.companyLink$"
                                 target="_blank"
                                 class="footer-link-text"
                               >
-                                $company_name$
+                              $companyInfo.companyName$
                               </a>
                               .
                             </td>

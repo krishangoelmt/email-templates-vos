@@ -2,21 +2,21 @@ Slides submitted by Assignee (Record Only)
 templateId: _vos_admin_record_slide_submitted
 https://projects.invisionapp.com/d/main#/console/18359198/388856587/preview
 
-	$TASK_NAME$
-	$COMPANY_NAME$
-	$ASIGNEE_NAME$
-	$NO_OF_SLIDES$
-	$ASSIGNEE_NAME$
-	$URL_TASK_IMAGE$
-	$NO_OF_SLIDES_PENDING$
-	$DUE_DATE$
-	$CENTER_IMAGE_URL$
-	$SLIDESHOW_URL$
-	$CONTEXT$
-	$PARAMS.FROMNAME$
-	$COMPANY.COMPANYNAME$
-	$USER_EMAIL$
-	$COMPANY_URL$
+	$taskInfo.taskName$
+	$companyInfo.companyName$
+	$userInfo.name$
+	$taskInfo.noOfSlides$
+	$params.fromName$
+	$taskInfo.taskImageUrl$
+	$notificationInfo.noOfSlidesPending$
+	$taskInfo.dueDate$
+	$notificationInfo.centerImageUrl$
+	$taskInfo.taskUrl$
+	$taskInfo.context$
+	$params.fromName$
+	$companyInfo.companyName$
+	$userInfo.email$
+	$companyInfo.companyLink$
 
 
 
@@ -24,20 +24,20 @@ Slides submitted by Assignee (Record Only) (plural)
 templateId: _vos_admin_record_multiple_slide_submitted
 https://projects.invisionapp.com/d/main#/console/18359198/391868673/preview
 
-	$TASK_NAME$
-	$COMPANY_NAME$
-	$ASIGNEE_NAME$
-	$NO_OF_SLIDES$
-	$ASSIGNEE_NAME$
-	$URL_TASK_IMAGE$
-	$NO_OF_SLIDES_PENDING$
-	$DUE_DATE$
-	$CENTER_IMAGE_URL$
-	$SLIDESHOW_URL$
-	$CONTEXT$
-	$PARAMS.FROMNAME$
-	$COMPANY.COMPANYNAME$
-	$USER_EMAIL$
+	$taskInfo.taskName$
+	$companyInfo.companyName$
+	$userInfo.name$
+	$taskInfo.noOfSlides$
+	$params.fromName$
+	$taskInfo.taskImageUrl$
+	$notificationInfo.noOfSlidesPending$
+	$taskInfo.dueDate$
+	$notificationInfo.centerImageUrl$
+	$taskInfo.taskUrl$
+	$taskInfo.context$
+	$params.fromName$
+	$companyInfo.companyName$
+	$userInfo.email$
 
 
 
@@ -45,19 +45,19 @@ Slides declined by Assignee (Record Only)
 templateId: _vos_admin_record_slide_single_slide_single_admin_record_only_declined
 https://invis.io/DSTOJJRB69Z#/388856621_VOS-1440-Admin-Emails-Record_Only-Slides_declined
 
-	$TASK_NAME$
-	$COMPANY_NAME$
-	$ASIGNEE_NAME$
-	$NO_OF_SLIDES$
-	$ASSIGNEE_NAME$
-	$URL_TASK_IMAGE$
-	$CENTER_IMAGE_URL$
-	$SLIDESHOW_URL$
-	$CONTEXT$
-	$PARAMS.FROMNAME$
-	$COMPANY.COMPANYNAME$
-	$USER_EMAIL$
-	$COMPANY_URL$
+	$taskInfo.taskName$
+	$companyInfo.companyName$
+	$userInfo.name$
+	$taskInfo.noOfSlides$
+	$params.fromName$
+	$taskInfo.taskImageUrl$
+	$notificationInfo.centerImageUrl$
+	$taskInfo.taskUrl$
+	$taskInfo.context$
+	$params.fromName$
+	$companyInfo.companyName$
+	$userInfo.email$
+	$companyInfo.companyLink$
 
 
 
@@ -65,19 +65,19 @@ Slides declined by Assignee (Record Only) plural
 templateId: _vos_admin_record_slide_multiple_slide_single_admin_record_only_declined
 https://invis.io/DSTOJJRB69Z#/389107535_VOS-1440-Admin-Emails-Record_Only-Slides_declined_multiple
 
-	$TASK_NAME$
-	$COMPANY_NAME$
-	$ASIGNEE_NAME$
-	$NO_OF_SLIDES$
-	$ASSIGNEE_NAME$
-	$URL_TASK_IMAGE$
-	$CENTER_IMAGE_URL$
-	$SLIDESHOW_URL$
-	$CONTEXT$
-	$PARAMS.FROMNAME$
-	$COMPANY.COMPANYNAME$
-	$USER_EMAIL$
-	$COMPANY_URL$
+	$taskInfo.taskName$
+	$companyInfo.companyName$
+	$userInfo.name$
+	$taskInfo.noOfSlides$
+	$params.fromName$
+	$taskInfo.taskImageUrl$
+	$notificationInfo.centerImageUrl$
+	$taskInfo.taskUrl$
+	$taskInfo.context$
+	$params.fromName$
+	$companyInfo.companyName$
+	$userInfo.email$
+	$companyInfo.companyLink$
 
 
 
@@ -85,19 +85,19 @@ Task submitted by Assignee (Upload and Record)
 templateId: _vos_admin_record_slide_task_single_admin_upload_record_submitted
 https://invis.io/DSTOJJRB69Z#/388856649_VOS-1440-Admin-Emails-Upload_Record-Task_submitted
 
-	$TASK_NAME$
-	$COMPANY_NAME$
-	$ASIGNEE_NAME$
-	$ASSIGNEE_NAME$
-	$URL_TASK_IMAGE$
-	$NO_OF_SLIDES_SUBMITTED$
-	$CENTER_IMAGE_URL$
-	$SLIDESHOW_URL$
-	$CONTEXT$
-	$PARAMS.FROMNAME$
-	$COMPANY.COMPANYNAME$
-	$USER_EMAIL$
-	$COMPANY_URL$
+	$taskInfo.taskName$
+	$companyInfo.companyName$
+	$userInfo.name$
+	$params.fromName$
+	$taskInfo.taskImageUrl$
+	$notificationInfo.noOfSlidesSubmitted$
+	$notificationInfo.centerImageUrl$
+	$taskInfo.taskUrl$
+	$taskInfo.context$
+	$params.fromName$
+	$companyInfo.companyName$
+	$userInfo.email$
+	$companyInfo.companyLink$
 
 
 
@@ -105,19 +105,19 @@ Task Declined by Assignee (Upload and Record)
 templateId: _vos_admin_record_slide_task_single_admin_upload_record_declined
 https://invis.io/DSTOJJRB69Z#/388856744_VOS-1440-Admin-Emails-Upload_Record-Task_declined
 
-	$TASK_NAME$
-	$COMPANY_NAME$
-	$ASIGNEE_NAME$
-	$ASSIGNEE_NAME$
-	$URL_TASK_IMAGE$
-	$CENTER_IMAGE_URL$
-	$SLIDESHOW_URL$
-	$CONTEXT$
-	$PARAMS.FROMNAME$
-	$COMPANY.COMPANYNAME$
-	$USER_EMAIL$
-	$USER_EMAIL$
-	$COMPANY_URL$
+	$taskInfo.taskName$
+	$companyInfo.companyName$
+	$userInfo.name$
+	$params.fromName$
+	$taskInfo.taskImageUrl$
+	$notificationInfo.centerImageUrl$
+	$taskInfo.taskUrl$
+	$taskInfo.context$
+	$params.fromName$
+	$companyInfo.companyName$
+	$userInfo.email$
+	$userInfo.email$
+	$companyInfo.companyLink$
 	
 
 

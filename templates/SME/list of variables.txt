@@ -2,20 +2,20 @@ Slides Received by Assignee (Record Only)
 templateID:_vos_new_slide_record_assignment
 https://projects.invisionapp.com/d/main#/console/18191940/386297802/preview
 
-	$company_name$
-	$ASIGNEE_NAME$
-	$NO_OF_SLIDES$
-	$TASK_NAME$
-	$URL_TASK_IMAGE$
+	$companyInfo.companyName$
+	$userInfo.name$
+	$taskInfo.noOfSlides$
+	$taskInfo.taskName$
+	$taskInfo.taskImageUrl$
 	$ASSNEE_NAME$
-	$DUE_DATE$
-	$CENTER_IMAGE_URL$
-	$SLIDESHOW_URL$
-	$CONTEXT$
+	$taskInfo.dueDate$
+	$notificationInfo.centerImageUrl$
+	$taskInfo.taskUrl$
+	$taskInfo.context$
 	$params.fromName$
-	$company.companyName$
-	$user_email$
-	$company_url$
+	$companyInfo.companyName$
+	$userInfo.email$
+	$companyInfo.companyLink$
 
 
 
@@ -23,21 +23,21 @@ Submission_Pending_By_Assignee(R)
 templateID: _vos_slide_record_single_slideshow_submission_pending
 https://projects.invisionapp.com/d/main#/console/18191940/386302170/preview
 
-	$COMPANY_NAME$
-	$ASIGNEE_NAME$
-	$NO_OF_SLIDES$
-	$TASK_NAME$
-	$URL_TASK_IMAGE$
-	$DUE_DATE$
-	$CENTER_IMAGE_URL$
-	$SLIDESHOW_URL$
-	$SLIDESHOW_URL$
-	$CONTEXT$
+	$companyInfo.companyName$
+	$userInfo.name$
+	$taskInfo.noOfSlides$
+	$taskInfo.taskName$
+	$taskInfo.taskImageUrl$
+	$taskInfo.dueDate$
+	$notificationInfo.centerImageUrl$
+	$taskInfo.taskUrl$
+	$taskInfo.taskUrl$
+	$taskInfo.context$
 	$params.fromName$
-	$company.companyName$
-	$user_email$
-	$user_email$
-	$company_url$
+	$companyInfo.companyName$
+	$userInfo.email$
+	$userInfo.email$
+	$companyInfo.companyLink$
 
 
 
@@ -45,21 +45,21 @@ Submission_Pending_by_Assignee(R)Multiple
 https://projects.invisionapp.com/d/main#/console/18191940/386302169/preview
 templateID: _vos_slide_record_single_admin_multiple_slideshow_submission_pending
 
-	$COMPANY_NAME$
-	$ASIGNEE_NAME$
-	$NO_OF_SLIDESHOWS$
-	$SLIDESHOWS.length$
-	$SLIDESHOWS[i].attachment$
-	$SLIDESHOWS[i].title$
-	$SLIDESHOWS[i].dueDate$
-	$SLIDESHOWS[i].URL$
-	$SLIDESHOWS[i].URL$
+	$companyInfo.companyName$
+	$userInfo.name$
+	$taskInfo.length$
+	$taskInfo.length$
+	$taskInfo[i].taskImageUrl$
+	$taskInfo[i].taskName$
+	$taskInfo[i].dueDate$
+	$taskInfo[i].taskUrl$
+	$taskInfo[i].taskUrl$
 	$params.fromName$
-	$company.companyName$
-	$user_email$
-	$user_email$
-	$company_url$
-	$company_name$
+	$companyInfo.companyName$
+	$userInfo.email$
+	$userInfo.email$
+	$companyInfo.companyLink$
+	$companyInfo.companyName$
 
 
 
@@ -67,22 +67,22 @@ Submission_Pending_by_Assignee(U+R)(single admin)(Clubbed)
 templateID: _vos_slide_record_single_admin_multiple_slideshow_multiple_type_submission_pending
 https://projects.invisionapp.com/d/main#/console/18191940/388856895/comments
 
-	$COMPANY_NAME$
-	$ASIGNEE_NAME$
-	$NO_OF_SLIDESHOWS$
-	$SLIDESHOWS.length$
-	$SLIDESHOWS[i].attachment$
-	$SLIDESHOWS[i].title$
-	$SLIDESHOWS[i].type$
-	$SLIDESHOWS[i].dueDate$
-	$SLIDESHOWS[i].URL$
-	$SLIDESHOWS[i].URL$
+	$companyInfo.companyName$
+	$userInfo.name$
+	$taskInfo.length$
+	$taskInfo.length$
+	$taskInfo[i].taskImageUrl$
+	$taskInfo[i].taskName$
+	$taskInfo[i].taskType$
+	$taskInfo[i].dueDate$
+	$taskInfo[i].taskUrl$
+	$taskInfo[i].taskUrl$
 	$params.fromName$
-	$company.companyName$
-	$user_email$
-	$user_email$
-	$company_url$
-	$company_name$
+	$companyInfo.companyName$
+	$userInfo.email$
+	$userInfo.email$
+	$companyInfo.companyLink$
+	$companyInfo.companyName$
 
 
 
@@ -90,22 +90,22 @@ Submission Pending by Assignee(Upload and Record)(multiple admins)(C)
 templateID: _vos_slide_record_multiple_admins_multiple_slideshow_multiple_type_submission_pending
 https://projects.invisionapp.com/d/main#/console/18191940/391258601/preview
 
-	$COMPANY_NAME$
-	$ASIGNEE_NAME$
-	$NO_OF_SLIDES$
-	$TASK_NAME$
-	$ASSIGNED_BY$
-	$URL_TASK_IMAGE$
-	$CENTER_IMAGE_URL$
-	$SLIDESHOW_URL$
-	$SLIDESHOW_URL$
+	$companyInfo.companyName$
+	$userInfo.name$
+	$taskInfo.noOfSlides$
+	$taskInfo.taskName$
+	$params.fromName$
+	$taskInfo.taskImageUrl$
+	$notificationInfo.centerImageUrl$
+	$taskInfo.taskUrl$
+	$taskInfo.taskUrl$
 	$NOTES$
-	$CONTEXT$
-	$PARAMS.FROMNAME$
-	$COMPANY.COMPANYNAME$
-	$USER_EMAIL$
-	$USER_EMAIL$
-	$COMPANY_URL$
+	$taskInfo.context$
+	$params.fromName$
+	$companyInfo.companyName$
+	$userInfo.email$
+	$userInfo.email$
+	$companyInfo.companyLink$
 
 
 
@@ -113,43 +113,43 @@ Asked_To_Re-record_by_Admin(R)
 templateID: _vos_slide_record_only_re_record
 https://projects.invisionapp.com/d/main#/console/18191940/386302867/comments
 
-	$COMPANY_NAME$
-	$ASIGNEE_NAME$
-	$NO_OF_SLIDES$
-	$TASK_NAME$
-	$ASSIGNED_BY$
-	$URL_TASK_IMAGE$
-	$CENTER_IMAGE_URL$
-	$SLIDESHOW_URL$
-	$SLIDESHOW_URL$
-	$NOTES$
-	$CONTEXT$
+	$companyInfo.companyName$
+	$userInfo.name$
+	$taskInfo.noOfSlides$
+	$taskInfo.taskName$
 	$params.fromName$
-	$company.companyName$
-	$user_email$
-	$user_email$
-	$company_url$
+	$taskInfo.taskImageUrl$
+	$notificationInfo.centerImageUrl$
+	$taskInfo.taskUrl$
+	$taskInfo.taskUrl$
+	$NOTES$
+	$taskInfo.context$
+	$params.fromName$
+	$companyInfo.companyName$
+	$userInfo.email$
+	$userInfo.email$
+	$companyInfo.companyLink$
 
 
 Task received by Assignee(U+R)
 templateID: _vos_new_task_upload_record_assignment
 https://projects.invisionapp.com/d/main#/console/18191940/386303131/preview
 
-	$COMPANY_NAME$
-	$ASIGNEE_NAME$
-	$TASK_NAME$
-	$ASSIGNED_BY$
-	$URL_TASK_IMAGE$
-	$DUE_DATE$
-	$CENTER_IMAGE_URL$
-	$SLIDESHOW_URL$
-	$SLIDESHOW_URL$
-	$CONTEXT$
+	$companyInfo.companyName$
+	$userInfo.name$
+	$taskInfo.taskName$
 	$params.fromName$
-	$company.companyName$
-	$user_email$
-	$user_email$
-	$company_url$
+	$taskInfo.taskImageUrl$
+	$taskInfo.dueDate$
+	$notificationInfo.centerImageUrl$
+	$taskInfo.taskUrl$
+	$taskInfo.taskUrl$
+	$taskInfo.context$
+	$params.fromName$
+	$companyInfo.companyName$
+	$userInfo.email$
+	$userInfo.email$
+	$companyInfo.companyLink$
 
 
 
@@ -157,20 +157,20 @@ Task_submission_pending_by_Assignee(U+R)
 templateID: _vos_task_single_slideshow_upload_record_submission_pending
 https://projects.invisionapp.com/d/main#/console/18191940/386303908/preview
 
-	$COMPANY_NAME$
-	$ASIGNEE_NAME$
-	$TASK_NAME$
-	$URL_TASK_IMAGE$
-	$DUE_DATE$
-	$CENTER_IMAGE_URL$
-	$SLIDESHOW_URL$
-	$SLIDESHOW_URL$
-	$CONTEXT$
+	$companyInfo.companyName$
+	$userInfo.name$
+	$taskInfo.taskName$
+	$taskInfo.taskImageUrl$
+	$taskInfo.dueDate$
+	$notificationInfo.centerImageUrl$
+	$taskInfo.taskUrl$
+	$taskInfo.taskUrl$
+	$taskInfo.context$
 	$params.fromName$
-	$company.companyName$
-	$user_email$
-	$user_email$
-	$company_url$
+	$companyInfo.companyName$
+	$userInfo.email$
+	$userInfo.email$
+	$companyInfo.companyLink$
 
 
 
@@ -178,21 +178,21 @@ Task_submission_pending_by_Assignee(U+R)Multiple
 templateID: _vos_task_single_admin_multiple_slideshow_submission_pending
 https://projects.invisionapp.com/d/main#/console/18191940/386303907/preview
 
-	$COMPANY_NAME$
-	$ASIGNEE_NAME$
-	$NO_OF_SLIDESHOWS$
-	$SLIDESHOWS.length$
-	$SLIDESHOWS[i].attachment$
-	$SLIDESHOWS[i].title$
-	$SLIDESHOWS[i].dueDate$
-	$SLIDESHOWS[i].URL$
-	$SLIDESHOWS[i].URL$
+	$companyInfo.companyName$
+	$userInfo.name$
+	$taskInfo.length$
+	$taskInfo.length$
+	$taskInfo[i].taskImageUrl$
+	$taskInfo[i].taskName$
+	$taskInfo[i].dueDate$
+	$taskInfo[i].taskUrl$
+	$taskInfo[i].taskUrl$
 	$params.fromName$
-	$company.companyName$
-	$user_email$
-	$user_email$
-	$company_url$
-	$company_name$
+	$companyInfo.companyName$
+	$userInfo.email$
+	$userInfo.email$
+	$companyInfo.companyLink$
+	$companyInfo.companyName$
 
 
 
@@ -200,23 +200,23 @@ Asked_To_Re-record_by_Admin(U+R)
 templateID: _vos_slide_learner_upload_record_re_record
 https://projects.invisionapp.com/d/main#/console/18191940/386304057/preview
 
-	$COMPANY_NAME$
-	$ASIGNEE_NAME$
-	$NO_OF_SLIDES$
-	$TASK_NAME$
-	$ASSIGNED_BY$
-	$URL_TASK_IMAGE$
-	$CENTER_IMAGE_URL$
-	$SLIDESHOW_URL$
-	$SLIDESHOW_URL$
-	$NOTES$
-	$CONTEXT$
+	$companyInfo.companyName$
+	$userInfo.name$
+	$taskInfo.noOfSlides$
+	$taskInfo.taskName$
 	$params.fromName$
-	$company.companyName$
-	$user_email$
-	$user_email$
-	$company_url$
-	$company_name$
+	$taskInfo.taskImageUrl$
+	$notificationInfo.centerImageUrl$
+	$taskInfo.taskUrl$
+	$taskInfo.taskUrl$
+	$NOTES$
+	$taskInfo.context$
+	$params.fromName$
+	$companyInfo.companyName$
+	$userInfo.email$
+	$userInfo.email$
+	$companyInfo.companyLink$
+	$companyInfo.companyName$
 
 
 
@@ -224,25 +224,25 @@ Slides_Approved_by_Admin(R)
 templateID: _vos_slide_single_slideshow_record_only_approved
 https://projects.invisionapp.com/d/main#/console/18191940/388856963/preview
 
-	$COMPANY_NAME$
-	$ASIGNEE_NAME$
+	$companyInfo.companyName$
+	$userInfo.name$
 	$APPROVED_NO_OF_SLIDES$
 	$TOTAL_NO_OF_SLIDES$
-	$TASK_NAME$
+	$taskInfo.taskName$
 	$APPROVED_BY$
-	$URL_TASK_IMAGE$
+	$taskInfo.taskImageUrl$
 	$APPROVED_NO_OF_SLIDES$
 	$PENDING_NO_OF_SLIDES$
-	$CENTER_IMAGE_URL$
-	$SLIDESHOW_URL$
-	$SLIDESHOW_URL$
-	$CONTEXT$
+	$notificationInfo.centerImageUrl$
+	$taskInfo.taskUrl$
+	$taskInfo.taskUrl$
+	$taskInfo.context$
 	$params.fromName$
-	$company.companyName$
-	$user_email$
-	$user_email$
-	$company_url$
-	$company_name$
+	$companyInfo.companyName$
+	$userInfo.email$
+	$userInfo.email$
+	$companyInfo.companyLink$
+	$companyInfo.companyName$
 
 
 
@@ -250,24 +250,24 @@ Slides Approved by an Admin(C)
 templateID: _vos_slide_single_admin_multiple_slideshow_multiple_type_approved
 https://projects.invisionapp.com/d/main#/console/18191940/388856966/preview
 
-	$COMPANY_NAME$
-	$ASIGNEE_NAME$
-	$NO_OF_SLIDESHOWS$
+	$companyInfo.companyName$
+	$userInfo.name$
+	$taskInfo.length$
 	$TOTAL_NO_OF_SLIDESHOWS$
 	$APPROVED_BY$
-	$SLIDESHOWS.length$
-	$SLIDESHOWS[i].attachment$
-	$SLIDESHOWS[i].title$
-	$SLIDESHOWS[i].type$
-	$SLIDESHOWS[i].dueDate$
-	$SLIDESHOWS[i].URL$
-	$SLIDESHOWS[i].URL$
+	$taskInfo.length$
+	$taskInfo[i].taskImageUrl$
+	$taskInfo[i].taskName$
+	$taskInfo[i].taskType$
+	$taskInfo[i].dueDate$
+	$taskInfo[i].taskUrl$
+	$taskInfo[i].taskUrl$
 	$params.fromName$
-	$company.companyName$
-	$user_email$
-	$user_email$
-	$company_url$
-	$company_name$
+	$companyInfo.companyName$
+	$userInfo.email$
+	$userInfo.email$
+	$companyInfo.companyLink$
+	$companyInfo.companyName$
 
 
 
@@ -275,24 +275,24 @@ Slides_Approved_by_Admin(U+R)
 templateID: _vos_slide_single_slideshow_upload_record_approved
 https://projects.invisionapp.com/d/main#/console/18191940/388857425/preview
 
-	$COMPANY_NAME$
-	$ASIGNEE_NAME$
+	$companyInfo.companyName$
+	$userInfo.name$
 	$APPROVED_NO_OF_SLIDES$
 	$TOTAL_NO_OF_SLIDES$
-	$TASK_NAME$
-	$URL_TASK_IMAGE$
+	$taskInfo.taskName$
+	$taskInfo.taskImageUrl$
 	$APPROVED_NO_OF_SLIDES$
 	$PENDING_NO_OF_SLIDES$
-	$CENTER_IMAGE_URL$
-	$SLIDESHOW_URL$
-	$SLIDESHOW_URL$
-	$CONTEXT$
+	$notificationInfo.centerImageUrl$
+	$taskInfo.taskUrl$
+	$taskInfo.taskUrl$
+	$taskInfo.context$
 	$params.fromName$
-	$company.companyName$
-	$user_email$
-	$user_email$
-	$company_url$
-	$company_name$
+	$companyInfo.companyName$
+	$userInfo.email$
+	$userInfo.email$
+	$companyInfo.companyLink$
+	$companyInfo.companyName$
 
 
 
@@ -300,19 +300,19 @@ Slides Approved by multiple Admins(C)
 templateID: _vos_slide_multiple_admin_multiple_slideshow_multiple_type_approved
 https://projects.invisionapp.com/d/main#/console/18191940/391049017/preview
 
-	$COMPANY_NAME$
-	$ASIGNEE_NAME$
-	$NO_OF_SLIDESHOWS$
+	$companyInfo.companyName$
+	$userInfo.name$
+	$taskInfo.length$
 	$TOTAL_NO_OF_SLIDESHOWS$
-	$SLIDESHOWS.length$
-	$SLIDESHOWS[i].attachment$
-	$SLIDESHOWS[i].title$
-	$SLIDESHOWS[i].type$
-	$SLIDESHOWS[i].dueDate$
-	$SLIDESHOWS[i].URL$
-	$SLIDESHOWS[i].URL$
-	$company.companyName$
-	$user_email$
-	$user_email$
-	$company_url$
-	$company_name$
+	$taskInfo.length$
+	$taskInfo[i].taskImageUrl$
+	$taskInfo[i].taskName$
+	$taskInfo[i].taskType$
+	$taskInfo[i].dueDate$
+	$taskInfo[i].taskUrl$
+	$taskInfo[i].taskUrl$
+	$companyInfo.companyName$
+	$userInfo.email$
+	$userInfo.email$
+	$companyInfo.companyLink$
+	$companyInfo.companyName$

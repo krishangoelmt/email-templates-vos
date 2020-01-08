@@ -228,7 +228,7 @@
                           <tr>
                             <td colspan="2" class="companyName alignLeft">
                               <!-- todo -->
-                              $COMPANY_NAME$
+                              $companyInfo.companyName$
                             </td>
                           </tr>
                           <tr>
@@ -243,8 +243,8 @@
                               valign="top"
                               align="left"
                             >
-                              Hi $ASIGNEE_NAME$! Your task submission of the of
-                              the Voice-over Slideshow ‘$TASK_NAME$’ is
+                              Hi $userInfo.name$! Your task submission of the of
+                              the Voice-over Slideshow ‘$taskInfo.taskName$’ is
                               <span class="bold-black-text">
                                 pending.
                               </span>
@@ -259,17 +259,10 @@
                               <img
                                 height="70"
                                 width="124"
-                                src="$URL_TASK_IMAGE$"
+                                src="$taskInfo.taskImageUrl$"
                                 class="intro-image"
                                 alt="Task attachments"
                               />
-                              <!-- <img
-                                height="70"
-								width="124"
-                                src="https://assets.gqindia.com/photos/5daef20299bbfd0008d312eb/16:9/w_1280%2cc_limit/top-image.jpg"
-                                class="intro-image"
-                                alt="Task attachments"
-                              /> -->
                             </td>
                           </tr>
                           <tr>
@@ -303,7 +296,7 @@
                                     class="center-text align-center"
                                     align="center"
                                   >
-                                    $DUE_DATE$
+                                    $taskInfo.dueDate$
                                   </td>
                                 </tr>
                                 <tr>
@@ -332,7 +325,7 @@
                                   >
                                     <img
                                       align="center"
-                                      src="$CENTER_IMAGE_URL$"
+                                      src="$notificationInfo.centerImageUrl$"
                                       alt="Submission pending illustration"
                                       width="208"
                                       height="160"
@@ -367,7 +360,7 @@
                                         <tr>
                                           <td align="center" valign="middle">
                                             <a
-                                              href="$SLIDESHOW_URL$"
+                                              href="$taskInfo.taskUrl$"
                                               style="word-wrap:normal; color:#4d7cc7; word-break:normal; white-space:nowrap; display:block; text-decoration:none"
                                               target="_blank"
                                             >
@@ -381,7 +374,7 @@
                                                   <td class="cta">
                                                     <a
                                                       class="cta-inner"
-                                                      href="$SLIDESHOW_URL$"
+                                                      href="$taskInfo.taskUrl$"
                                                       target="_blank"
                                                       >Go To Slideshow</a
                                                     >
@@ -417,7 +410,7 @@
                           </tr>
                           <tr>
                             <td colspan="2" class="context-text" align="left">
-                              $CONTEXT$
+                              $taskInfo.context$
                             </td>
                           </tr>
 
@@ -430,7 +423,7 @@
                             <td colspan="2" class="signature" align="left">
                               Thanks, <br />
                               $params.fromName$ <br />
-                              $company.companyName$
+                              $companyInfo.companyName$
                             </td>
                           </tr>
                           <tr>
@@ -455,16 +448,16 @@
                             >
                               The email was sent to
                               <a
-                                href="mailto:$user_email$"
+                                href="mailto:$userInfo.email$"
                                 class="footer-link-text"
-                                >$user_email$</a
+                                >$userInfo.email$</a
                               >. You received this email because you were
                               invited to
                               <a
-                                href="$company_url$"
+                                href="$companyInfo.companyLink$"
                                 target="_blank"
                                 class="footer-link-text"
-                                >$company_name$</a
+                                >$companyInfo.companyName$</a
                               >.
                             </td>
                           </tr>
