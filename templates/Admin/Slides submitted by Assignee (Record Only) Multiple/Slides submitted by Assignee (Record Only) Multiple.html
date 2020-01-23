@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>
-      Slide Recording Submissions | Voice-over Slideshow
+      Voice-over Slideshow | Slide Submitted | Single Admin | Multiple Slideshow | Admin
     </title>
     <style>
       .tableWrapper {
@@ -92,25 +92,32 @@
         width: 208px;
       }
 
-      .cta {
-        padding: 1px 10px 3px;
-        background-color: #fff;
-        border: 1px solid #4d7cc7;
-        border-radius: 16px;
+      .ctaLinkOuter {
+        word-wrap:normal;
+        color:#4d7cc7;
+        background-color: #ffffff; 
+        word-break:normal; 
+        white-space:nowrap; 
+        display:block; 
+        text-decoration:none; 
+        border-radius: 24px;
       }
 
-      .cta-inner {
-        line-height: 16px;
+      .ctaLinkWrapper {
+        padding:4px 12px;
+        color:#4d7cc7;
+        font-size:12px;
+        font-weight:normal;
+        background-color: #ffffff;
+        border-radius: 24px;
+        border: 1px solid #4d7cc7
+      }
+
+      .ctaLinkInner {
         font-size: 12px;
-        display: inline-block;
-        text-decoration: none;
-        color: #4d7cc7;
-        font-weight: 600;
-        font-family: open sans, helvetica, arial, verdana;
-      }
-
-      .width120 {
-        width: 120px;
+        color:#4d7cc7;
+        display:inline-block;
+        text-decoration:none;
       }
 
       .module-description {
@@ -133,12 +140,10 @@
       }
 
       .large-black-text {
-        height: 20px;
-        width: 209px;
         color: #000000;
         font-family: Arial;
         font-size: 14px;
-        line-height: 20px;
+        line-height: 24px;
       }
 
       .small-grey-text {
@@ -322,19 +327,12 @@
                               valign="top"
                               align="left"
                             >
-                              Hi $userInfo.name$! Slides assigned by you to
-                              <span class="bold-black-text">
-                                record
-                              </span>
-                              on
-                              <span class="bold-black-text">
+                            Hi $userInfo.name$! $params.fromName$ has  <span class="bold-black-text">
+                                submitted
+                              </span> recordings for slides of <span class="bold-black-text">
                                 $taskInfo.length$
                               </span>
-                              Voice-over Slideshows have been
-                              <span class="bold-black-text">
-                                submitted
-                              </span>
-                              by $params.fromName$.
+                              Voice-over Slideshows.
                             </td>
                           </tr>
                           <tr>
@@ -414,57 +412,24 @@
                                       </td>
 
                                       <td
-                                        width="120"
                                         valign="top"
                                         align="right"
-                                        class="alignRight width120 pt8"
+                                        class="alignRight pt8"
                                       >
-                                        <table
-                                          width="auto"
-                                          border="0"
-                                          cellpadding="0"
-                                          align="center"
-                                          cellspacing="0"
-                                          style="display:inline-block"
-                                        >
-                                          <tbody>
-                                            <tr>
-                                              <td
-                                                align="center"
-                                                valign="middle"
-                                              >
-                                                <a
-                                                  href="$taskInfo[i].taskUrl$"
-                                                  style="word-wrap:normal; color:#4d7cc7; word-break:normal; white-space:nowrap; display:block; text-decoration:none"
-                                                  target="_blank"
-                                                >
-                                                  <table
-                                                    border="0"
-                                                    cellspacing="0"
-                                                    cellpadding="0"
-                                                    width="auto"
-                                                  >
-                                                    <tr>
-                                                      <td
-                                                        class="cta"
-                                                        valign="middle"
-                                                        align="center"
-                                                        bgcolor="#ffffff"
-                                                      >
-                                                        <a
-                                                          class="cta-inner"
-                                                          href="$taskInfo[i].taskUrl$"
-                                                          target="_blank"
-                                                        >
-                                                          Go To Slideshow
-                                                        </a>
-                                                      </td>
-                                                    </tr>
-                                                  </table>
-                                                </a>
-                                              </td>
-                                            </tr>
-                                          </tbody>
+                                        <table border="0" align="right" cellpadding="0" cellspacing="0" style="display:inline-block"> 
+                                          <tr>
+                                            <td align="center" valign="middle">
+                                              <a href="$taskInfo[i].taskUrl$" class="ctaLinkOuter"  target="_blank" >
+                                                <table border="0" cellspacing="0" cellpadding="0" width="auto">
+                                                  <tr>
+                                                    <td class="ctaLinkWrapper">
+                                                      <a href="$taskInfo[i].taskUrl$" class="ctaLinkInner" target="_blank">Go to Slideshow</a>
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </a>
+                                            </td>
+                                          </tr>
                                         </table>
                                       </td>
                                     </tr>

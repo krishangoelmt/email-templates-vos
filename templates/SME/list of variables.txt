@@ -9,7 +9,7 @@ https://projects.invisionapp.com/d/main#/console/18191940/386297802/preview
 	$taskInfo.taskImageUrl$
 	$taskInfo.dueDate$
 	$notificationInfo.centerImageUrl$
-	$taskInfo.taskUrl$
+	$taskInfo.taskLink$
 	$taskInfo.context$
 	$params.fromName$
 	$companyInfo.companyName$
@@ -29,8 +29,8 @@ https://projects.invisionapp.com/d/main#/console/18191940/386302170/preview
 	$taskInfo.taskImageUrl$
 	$taskInfo.dueDate$
 	$notificationInfo.centerImageUrl$
-	$taskInfo.taskUrl$
-	$taskInfo.taskUrl$
+	$taskInfo.taskLink$
+	$taskInfo.taskLink$
 	$taskInfo.context$
 	$params.fromName$
 	$companyInfo.companyName$
@@ -96,8 +96,8 @@ https://projects.invisionapp.com/d/main#/console/18191940/391258601/preview
 	$params.fromName$
 	$taskInfo.taskImageUrl$
 	$notificationInfo.centerImageUrl$
-	$taskInfo.taskUrl$
-	$taskInfo.taskUrl$
+	$taskInfo.taskLink$
+	$taskInfo.taskLink$
 	$taskInfo.notes$
 	$taskInfo.context$
 	$params.fromName$
@@ -119,8 +119,8 @@ https://projects.invisionapp.com/d/main#/console/18191940/386302867/comments
 	$params.fromName$
 	$taskInfo.taskImageUrl$
 	$notificationInfo.centerImageUrl$
-	$taskInfo.taskUrl$
-	$taskInfo.taskUrl$
+	$taskInfo.taskLink$
+	$taskInfo.taskLink$
 	$taskInfo.notes$
 	$taskInfo.context$
 	$params.fromName$
@@ -141,8 +141,8 @@ https://projects.invisionapp.com/d/main#/console/18191940/386303131/preview
 	$taskInfo.taskImageUrl$
 	$taskInfo.dueDate$
 	$notificationInfo.centerImageUrl$
-	$taskInfo.taskUrl$
-	$taskInfo.taskUrl$
+	$taskInfo.taskLink$
+	$taskInfo.taskLink$
 	$taskInfo.context$
 	$params.fromName$
 	$companyInfo.companyName$
@@ -162,8 +162,8 @@ https://projects.invisionapp.com/d/main#/console/18191940/386303908/preview
 	$taskInfo.taskImageUrl$
 	$taskInfo.dueDate$
 	$notificationInfo.centerImageUrl$
-	$taskInfo.taskUrl$
-	$taskInfo.taskUrl$
+	$taskInfo.taskLink$
+	$taskInfo.taskLink$
 	$taskInfo.context$
 	$params.fromName$
 	$companyInfo.companyName$
@@ -206,8 +206,8 @@ https://projects.invisionapp.com/d/main#/console/18191940/386304057/preview
 	$params.fromName$
 	$taskInfo.taskImageUrl$
 	$notificationInfo.centerImageUrl$
-	$taskInfo.taskUrl$
-	$taskInfo.taskUrl$
+	$taskInfo.taskLink$
+	$taskInfo.taskLink$
 	$taskInfo.notes$
 	$taskInfo.context$
 	$params.fromName$
@@ -231,8 +231,8 @@ https://projects.invisionapp.com/d/main#/console/18191940/388856963/preview
 	$taskInfo.taskImageUrl$
 	$notificationInfo.noOfSlidesPending$
 	$notificationInfo.centerImageUrl$
-	$taskInfo.taskUrl$
-	$taskInfo.taskUrl$
+	$taskInfo.taskLink$
+	$taskInfo.taskLink$
 	$taskInfo.context$
 	$params.fromName$
 	$companyInfo.companyName$
@@ -277,8 +277,8 @@ https://projects.invisionapp.com/d/main#/console/18191940/388857425/preview
 	$taskInfo.taskImageUrl$
 	$notificationInfo.noOfSlidesPending$
 	$notificationInfo.centerImageUrl$
-	$taskInfo.taskUrl$
-	$taskInfo.taskUrl$
+	$taskInfo.taskLink$
+	$taskInfo.taskLink$
 	$taskInfo.context$
 	$params.fromName$
 	$companyInfo.companyName$

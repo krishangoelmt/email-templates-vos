@@ -7,7 +7,7 @@
   "$EMAIL_IMAGE$": "../images/Email_image.svg",
   "$params.fromName$": "Ishan Rathi",
   "$taskInfo.dueDate$": "26/12/2019",
-  "$taskInfo.taskUrl$": "../index.html",
+  "$taskInfo.taskLink$": "../index.html",
   "$taskInfo.context$": "This one slideshow is about MindTickle Glossary of Terms. This deals with all the terms that are used in our platform. This slideshow will help new joinees to get a comprehensive view of all the terms used in the platform and help in their onboarding process.",
   "$params.fromName$": "Ishan Rathi",
   "$companyInfo.companyName$": "MindTickle",
