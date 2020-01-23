@@ -114,19 +114,63 @@ https://invis.io/DSTOJJRB69Z#/388856744_VOS-1440-Admin-Emails-Upload_Record-Task
 	$taskInfo.taskUrl$
 	$taskInfo.context$
 	$params.fromName$
-	$companyInfo.companyName$
 	$userInfo.email$
 	$userInfo.email$
-	$companyInfo.companyLink$
 	
 
+<-- New Templates to be implemented -->
 
-
-Slides declined by Assignee (Record Only) Multiple
+Slides submitted by Assignee (Record Only) Multiple
 templateId: _vos_admin_record_slide_multiple_slideshow_single_admin_record_only_submitted
-https://invis.io/DSTOJJRB69Z#/388856588_VOS-1440-Admin-Emails-Submission_By_assignee-Clubbed
+https://invis.io/7HVO6ZYZMS8
 
-PENDING
+$companyInfo.companyName$
+$userInfo.name$
+$taskInfo.length$
+$taskInfo[i].taskImageUrl$
+$taskInfo[i].taskName$
+$taskInfo[i].noOfSlidesSubmitted$
+$taskInfo[i].taskUrl$
+$params.fromName$
+$userInfo.email$
+$companyInfo.companyLink$
+
+
+Task submitted by Assignee (Upload and Record) multiple
+templateId: _vos_admin_record_slide_task_single_admin_multiple_slideshow_upload_record_submitted
+https://invis.io/7HVO6ZYZMS8
+
+$companyInfo.companyName$
+$userInfo.name$
+$taskInfo.length$
+$taskInfo[i].taskImageUrl$
+$taskInfo[i].taskName$
+$taskInfo[i].noOfSlidesSubmitted$
+$taskInfo[i].taskUrl$
+$params.fromName$
+$userInfo.email$
+$companyInfo.companyLink$
+
+Task + Slides submitted by multiple assignees (Clubbed) multiple
+templateId: _vos_admin__record_slide_task_multiple_slideshow_multiple_admin_multiple_type_submitted
+https://projects.invisionapp.com/d/main#/console/18359198/389542096/preview
+
+$companyInfo.companyName$
+$userInfo.name$
+$notificationInfo.smeLength$
+$taskInfo.length$
+$taskInfo[i].taskImageUrl$
+$taskInfo[i].taskName$
+$taskInfo[i].noOfSlidesSubmitted$
+$taskInfo[i].sme.length$
+$taskInfo[i].sme[j].imageUrl$
+$taskInfo[i].sme[j].name$
+$taskInfo[i].sme[j].noOfSlides
+$taskInfo[i].taskUrl$
+$params.fromName$
+$userInfo.email$
+$companyInfo.companyLink$
+
 
 
 
