@@ -171,6 +171,22 @@ $params.fromName$
 $userInfo.email$
 $companyInfo.companyLink$
 
+Slideshow Converted to Video
+templateId: _vos_admin_slideshow_convert_to_video
+https://projects.invisionapp.com/d/?origin=v7?origin=v7#/console/18359198/402130834/preview?scrollOffset=34622
+
+$companyInfo.companyName$
+$userInfo.name$
+$taskInfo.taskName$
+$taskInfo.taskImageUrl$
+$notificationInfo.centerImageUrl$
+$taskInfo.taskLink$
+$taskInfo.context$
+$companyInfo.companyName$
+$userInfo.email$
+$companyInfo.companyLink$
+
+
 
 
 
