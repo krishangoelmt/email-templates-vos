@@ -354,6 +354,11 @@
                             </td>
                           </tr>
                           <tr>
+                            <td colspan="2">
+                                <% if (vossInfo.taskInfo[0].context != '') { %>
+                            </td>
+                          </tr> 
+                          <tr>
                             <td colspan="2" height="24" class="emptyRow24">
                               &nbsp;
                             </td>
@@ -373,7 +378,11 @@
                               $taskInfo.context$
                             </td>
                           </tr>
-
+                          <tr>
+                            <td colspan="2">
+                              <% } %>
+                            </td>
+                          </tr> 
                           <tr>
                             <td colspan="2" height="32" class="emptyRow32">
                               &nbsp;

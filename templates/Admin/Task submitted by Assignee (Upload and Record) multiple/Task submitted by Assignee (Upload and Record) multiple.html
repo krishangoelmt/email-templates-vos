@@ -207,12 +207,6 @@
         padding-top: 8px;
       }
 
-      .hidden {
-        color: #fff;
-        background: #fff;
-        background-color: #fff;
-      }
-
       .emptyRow22 {
         padding: 0;
         margin: 0;
@@ -328,12 +322,7 @@
                               valign="top"
                               align="left"
                             >
-                            Hi $userInfo.name$! $params.fromName$ has  <span class="bold-black-text">
-                                submitted slides
-                              </span> and  <span class="bold-black-text">recordings</span> for <span class="bold-black-text">
-                                $taskInfo.length$
-                              </span>
-                              voiceover slideshows.
+                              Hi $userInfo.name$! $params.fromName$ has <span class="bold-black-text">submitted slides</span> and  <span class="bold-black-text">recordings</span> for <span class="bold-black-text">$taskInfo.length$</span>Voiceover <% if (vossInfo.taskInfo.length  > 1) { %>Slideshows<%} else {%>Slideshow<% } %>.
                             </td>
                           </tr>
                           <tr>
@@ -352,9 +341,9 @@
                                 >
                                   <tbody>
                                     <tr>
-                                      <td colspan="3" class="hidden">
+                                      <td colspan="3">
                                         <% var i = 0 %> <% for(i=0; i <
-                                        $taskInfo.length$ && i < 50; i++) { %>
+                                        vossInfo.taskInfo.length && i < 50; i++) { %>
                                       </td>
                                     </tr>
                                     <!-- Row to be repeated START -->
@@ -400,9 +389,7 @@
                                                 valign="top"
                                                 class="alignLeft small-grey-text"
                                               >
-                                                Upload Slides + Record
-                                                <span class="separator">&bull;</span>
-                                              $taskInfo[i].noOfSlidesSubmitted$ Slides
+                                                $taskInfo[i].taskType$<span class="separator">&bull;</span>$taskInfo[i].noOfSlidesSubmitted$ <% if (vossInfo.taskInfo[i].noOfSlidesSubmitted > 1) { %>Slides<% } else { %>Slide<% } %>
                                               </td>
                                             </tr>
                                           </tbody>
@@ -456,7 +443,7 @@
                                     </tr>
                                     <!-- Row to be repeated END -->
                                     <tr>
-                                      <td class="hidden"><% } %></td>
+                                      <td colspan="3"><% } %></td>
                                     </tr>
                                   </tbody>
                                 </table>

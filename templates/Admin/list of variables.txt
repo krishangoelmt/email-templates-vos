@@ -1,6 +1,7 @@
 Slides submitted by Assignee (Record Only)
 templateId: _vos_admin_record_slide_submitted
-https://projects.invisionapp.com/d/main#/console/18359198/388856587/preview
+https://projects.invisionapp.com/d/main#/console/18359198/388856587/preview  (single slide)
+https://projects.invisionapp.com/d/main#/console/18359198/391868673/preview  (multiple slides)
 
 	$taskInfo.taskName$
 	$companyInfo.companyName$
@@ -12,38 +13,18 @@ https://projects.invisionapp.com/d/main#/console/18359198/388856587/preview
 	$taskInfo.dueDate$
 	$notificationInfo.centerImageUrl$
 	$taskInfo.taskUrl$
+	vossInfo.taskInfo[0].context
 	$taskInfo.context$
 	$params.fromName$
 	$companyInfo.companyName$
 	$userInfo.email$
 	$companyInfo.companyLink$
-
-
-
-Slides submitted by Assignee (Record Only) (plural)
-templateId: _vos_admin_record_multiple_slide_submitted
-https://projects.invisionapp.com/d/main#/console/18359198/391868673/preview
-
-	$taskInfo.taskName$
-	$companyInfo.companyName$
-	$userInfo.name$
-	$taskInfo.noOfSlides$
-	$params.fromName$
-	$taskInfo.taskImageUrl$
-	$notificationInfo.noOfSlidesPending$
-	$taskInfo.dueDate$
-	$notificationInfo.centerImageUrl$
-	$taskInfo.taskUrl$
-	$taskInfo.context$
-	$params.fromName$
-	$companyInfo.companyName$
-	$userInfo.email$
-
 
 
 Slides declined by Assignee (Record Only)
 templateId: _vos_admin_record_slide_single_slide_single_admin_record_only_declined
-https://invis.io/DSTOJJRB69Z#/388856621_VOS-1440-Admin-Emails-Record_Only-Slides_declined
+https://invis.io/DSTOJJRB69Z#/388856621_VOS-1440-Admin-Emails-Record_Only-Slides_declined  (single slide)
+https://projects.invisionapp.com/share/DSTOJJRB69Z#/screens/389107535   (multiple slides)
 
 	$taskInfo.taskName$
 	$companyInfo.companyName$
@@ -53,32 +34,12 @@ https://invis.io/DSTOJJRB69Z#/388856621_VOS-1440-Admin-Emails-Record_Only-Slides
 	$taskInfo.taskImageUrl$
 	$notificationInfo.centerImageUrl$
 	$taskInfo.taskUrl$
+	vossInfo.taskInfo[0].context
 	$taskInfo.context$
 	$params.fromName$
 	$companyInfo.companyName$
 	$userInfo.email$
 	$companyInfo.companyLink$
-
-
-
-Slides declined by Assignee (Record Only) plural
-templateId: _vos_admin_record_slide_multiple_slide_single_admin_record_only_declined
-https://invis.io/DSTOJJRB69Z#/389107535_VOS-1440-Admin-Emails-Record_Only-Slides_declined_multiple
-
-	$taskInfo.taskName$
-	$companyInfo.companyName$
-	$userInfo.name$
-	$taskInfo.noOfSlides$
-	$params.fromName$
-	$taskInfo.taskImageUrl$
-	$notificationInfo.centerImageUrl$
-	$taskInfo.taskUrl$
-	$taskInfo.context$
-	$params.fromName$
-	$companyInfo.companyName$
-	$userInfo.email$
-	$companyInfo.companyLink$
-
 
 
 Task submitted by Assignee (Upload and Record)
@@ -93,6 +54,7 @@ https://invis.io/DSTOJJRB69Z#/388856649_VOS-1440-Admin-Emails-Upload_Record-Task
 	$notificationInfo.noOfSlidesSubmitted$
 	$notificationInfo.centerImageUrl$
 	$taskInfo.taskUrl$
+	vossInfo.taskInfo[0].context
 	$taskInfo.context$
 	$params.fromName$
 	$companyInfo.companyName$
@@ -112,6 +74,7 @@ https://invis.io/DSTOJJRB69Z#/388856744_VOS-1440-Admin-Emails-Upload_Record-Task
 	$taskInfo.taskImageUrl$
 	$notificationInfo.centerImageUrl$
 	$taskInfo.taskUrl$
+	vossInfo.taskInfo[0].context
 	$taskInfo.context$
 	$params.fromName$
 	$userInfo.email$
@@ -136,7 +99,7 @@ $userInfo.email$
 $companyInfo.companyLink$
 
 
-Task submitted by Assignee (Upload and Record) multiple
+Task submitted by Assignee (Upload and Record) multiple {taskType variable to be added (ask Nirav)}
 templateId: _vos_admin_record_slide_task_single_admin_multiple_slideshow_upload_record_submitted
 https://invis.io/7HVO6ZYZMS8
 
@@ -146,6 +109,7 @@ $taskInfo.length$
 $taskInfo[i].taskImageUrl$
 $taskInfo[i].taskName$
 $taskInfo[i].noOfSlidesSubmitted$
+$taskInfo[i].taskType$
 $taskInfo[i].taskUrl$
 $params.fromName$
 $userInfo.email$
@@ -181,6 +145,7 @@ $taskInfo.taskName$
 $taskInfo.taskImageUrl$
 $notificationInfo.centerImageUrl$
 $taskInfo.taskLink$
+vossInfo.taskInfo[0].context
 $taskInfo.context$
 $companyInfo.companyName$
 $userInfo.email$

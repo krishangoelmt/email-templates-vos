@@ -339,12 +339,7 @@
                               valign="top"
                               align="left"
                             >
-                            Hi $userInfo.name$! <span class="bold-black-text">$notificationInfo.smeLength$</span> assignees have  <span class="bold-black-text">
-                                submitted slides
-                              </span> and  <span class="bold-black-text">recordings</span> for <span class="bold-black-text">
-                                $taskInfo.length$
-                              </span>
-                              voiceover slideshows.
+                              Hi $userInfo.name$! <span class="bold-black-text">$notificationInfo.smeLength$</span> <% if (vossInfo.smeLength > 1) { %>assignees have<% } else {%>assignee has<% } %> <span class="bold-black-text">submitted slides</span> and  <span class="bold-black-text">recordings</span> for <span class="bold-black-text">$taskInfo.length$</span> Voiceover <% if (vossInfo.taskInfo.length > 1) { %>Slideshows<% } else { %>Slideshow<% } %>.
                             </td>
                           </tr>
                           <tr>
@@ -365,7 +360,7 @@
                                     <tr>
                                       <td colspan="3" class="hidden">
                                         <% var i = 0 %> <% for(i=0; i <
-                                        $taskInfo.length$ && i < 50; i++) { %>
+                                        vossInfo.taskInfo.length && i < 50; i++) { %>
                                       </td>
                                     </tr>
                                     <!-- Row to be repeated START -->
@@ -411,15 +406,13 @@
                                                 valign="top"
                                                 class="alignLeft small-grey-text"
                                               >
-                                                Upload Slides + Record
-                                                <span class="separator">&bull;</span>
-                                              $taskInfo[i].noOfSlidesSubmitted$ Slides
+                                                $taskInfo[i].taskType$ <span class="separator">&bull;</span> $taskInfo[i].noOfSlidesSubmitted$ <% if (vossInfo.taskInfo[i].noOfSlidesSubmitted > 1) { %>Slides<% } else { %>Slide<% } %>
                                               </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="3" class="hidden">
                                                     <% var j = 0 %> <% for(j=0; j <
-                                                    $taskInfo[i].sme.length$ && j < 50; j++) { %>
+                                                    vossInfo.taskInfo[i].sme.length && j < 50; j++) { %>
                                                   </td>
                                             </tr>
                                             <tr>
@@ -435,7 +428,7 @@
                                                     <td width="auto" align="left" class="alignLeft small-grey-text">
                                                         $taskInfo[i].sme[j].name$
                                                       <span class="separator">&bull;</span>
-                                                      $taskInfo[i].sme[j].noOfSlides Slides$
+                                                      $taskInfo[i].sme[j].noOfSlides$ <% if (vossInfo.taskInfo[i].sme[j].noOfSlides > 1) { %>Slides<% } else {%>Slide<% } %>
                                                     </td>
                                                   </tr>
                                                 </table>
