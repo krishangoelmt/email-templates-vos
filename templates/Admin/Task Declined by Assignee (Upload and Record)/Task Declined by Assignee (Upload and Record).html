@@ -279,7 +279,7 @@
                     </tr>
                     <tr>
                       <td colspan="1" class="open-text" align="left">
-                        Hi $userInfo.name$! $params.fromName$ has <span class="bold-red-text">declined</span> the <span class="bold-black-text">upload slides and record</span> task for the voiceover slideshow ‘$taskInfo.taskName$’. 
+                        Hi $userInfo.name$! $params.fromName$ has <span class="bold-red-text">declined</span> the <span class="bold-black-text">upload slides and record</span> task for the ‘$taskInfo.taskName$’ Voiceover Slideshow. 
                       </td>
                       <td
                         class="open-image-wrap"
@@ -379,6 +379,11 @@
                         </table>
                       </td>
                     </tr>
+                    <!-- <tr>
+                      <td colspan="2">
+                          <% if (vossInfo.taskInfo[0].context != '') { %>
+                      </td>
+                    </tr>  -->
                     <tr>
                       <td colspan="2" class="emptyRow24">&nbsp;</td>
                     </tr>
@@ -395,6 +400,11 @@
                         $taskInfo.context$
                       </td>
                     </tr>
+                    <!-- <tr>
+                      <td colspan="2">
+                          <% } %>
+                      </td>
+                    </tr>  -->
                     <tr>
                       <td colspan="2" height="32" class="emptyRow32">&nbsp;</td>
                     </tr>
