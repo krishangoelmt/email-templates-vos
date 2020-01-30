@@ -13,12 +13,13 @@ https://projects.invisionapp.com/d/main#/console/18359198/391868673/preview  (mu
 	$taskInfo.dueDate$
 	$notificationInfo.centerImageUrl$
 	$taskInfo.taskUrl$
-	vossInfo.taskInfo[0].context
+	vossInfo.taskInfo.context
 	$taskInfo.context$
 	$params.fromName$
 	$companyInfo.companyName$
 	$userInfo.email$
 	$companyInfo.companyLink$
+
 
 
 Slides declined by Assignee (Record Only)
@@ -34,7 +35,7 @@ https://projects.invisionapp.com/share/DSTOJJRB69Z#/screens/389107535   (multipl
 	$taskInfo.taskImageUrl$
 	$notificationInfo.centerImageUrl$
 	$taskInfo.taskUrl$
-	vossInfo.taskInfo[0].context
+	vossInfo.taskInfo.context
 	$taskInfo.context$
 	$params.fromName$
 	$companyInfo.companyName$
@@ -54,7 +55,7 @@ https://invis.io/DSTOJJRB69Z#/388856649_VOS-1440-Admin-Emails-Upload_Record-Task
 	$notificationInfo.noOfSlidesSubmitted$
 	$notificationInfo.centerImageUrl$
 	$taskInfo.taskUrl$
-	vossInfo.taskInfo[0].context
+	vossInfo.taskInfo.context
 	$taskInfo.context$
 	$params.fromName$
 	$companyInfo.companyName$
@@ -74,7 +75,7 @@ https://invis.io/DSTOJJRB69Z#/388856744_VOS-1440-Admin-Emails-Upload_Record-Task
 	$taskInfo.taskImageUrl$
 	$notificationInfo.centerImageUrl$
 	$taskInfo.taskUrl$
-	vossInfo.taskInfo[0].context
+	vossInfo.taskInfo.context
 	$taskInfo.context$
 	$params.fromName$
 	$userInfo.email$
@@ -99,9 +100,10 @@ $userInfo.email$
 $companyInfo.companyLink$
 
 
-Task submitted by Assignee (Upload and Record) multiple {taskType variable to be added (ask Nirav)}
+Task submitted by Assignee (Upload and Record) multiple
 templateId: _vos_admin_record_slide_task_single_admin_multiple_slideshow_upload_record_submitted
-https://invis.io/7HVO6ZYZMS8
+https://projects.invisionapp.com/d/main#/console/18359198/388856650/preview
+
 
 $companyInfo.companyName$
 $userInfo.name$
@@ -145,7 +147,7 @@ $taskInfo.taskName$
 $taskInfo.taskImageUrl$
 $notificationInfo.centerImageUrl$
 $taskInfo.taskLink$
-vossInfo.taskInfo[0].context
+vossInfo.taskInfo.context
 $taskInfo.context$
 $companyInfo.companyName$
 $userInfo.email$

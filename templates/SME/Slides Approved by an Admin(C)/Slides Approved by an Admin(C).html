@@ -316,19 +316,7 @@
                               valign="top"
                               align="left"
                             >
-                              Hi $userInfo.name$! Your
-                              <span class="bold-black-text">
-                                $notificationInfo.totalNoOfSlidesApproved$
-                              </span>
-                              submitted recordings on slides of
-                              <span class="bold-black-text">
-                                $taskInfo.length$
-                              </span>
-                              Voice-over Slideshows have been
-                              <span class="bold-green-text">
-                                Approved
-                              </span>
-                              by $params.fromName$.
+                              Hi $userInfo.name$! $params.fromName$ has <span class="bold-green-text">approved</span> <span class="bold-black-text">$notificationInfo.totalNoOfSlidesApproved$</span> <% if (vossInfo.totalNoOfSlidesApproved > 1) { %>recordings<% } else { %>recording<% } %> you submitted for <span class="bold-black-text">$taskInfo.length$</span> Voiceover <% if (vossInfo.taskInfo.length > 1) { %>Slideshows<% } else { %>Slideshow<% } %>.
                             </td>
                           </tr>
                           <tr>
@@ -399,8 +387,7 @@
                                                 <span class="separator">
                                                   &bull;
                                                 </span>
-                                                Due date:
-                                                $taskInfo[i].dueDate$
+                                                $taskInfo[i].totalNoOfSlidesApproved$ <% if (vossInfo.taskInfo[i].totalNoOfSlidesApproved > 1) { %>Slides<% } else { %>Slide<% } %> Approved
                                               </td>
                                             </tr>
                                           </tbody>

@@ -242,12 +242,7 @@
                               valign="top"
                               align="left"
                             >
-                              Hi $userInfo.name$! Your recording submissions on
-                              <span class="bold-black-text">
-                                $taskInfo.noOfSlides$ slide(s)
-                              </span>
-                              of the Voice-over Slideshow ‘$taskInfo.taskName$’ is
-                              pending.
+                              Hi $userInfo.name$! Your Voiceover recordings on <span class="bold-black-text">$taskInfo.noOfSlides$ <%if (vossInfo.taskInfo.noOfSlides > 1) { %>slides<% } else { %>slide<% } %></span> of ‘$taskInfo.taskName$’ Voiceover Slideshow <%if (vossInfo.taskInfo.noOfSlides > 1) { %>are<% } else { %>is<% } %> due soon.
                             </td>
                             <td
                               colspan="1"
@@ -389,6 +384,11 @@
                             </td>
                           </tr>
                           <tr>
+                            <td colspan="2">
+                              <% if (vossInfo.taskInfo.context != '') { %>
+                            </td>
+                          </tr>
+                          <tr>
                             <td colspan="2" height="24" class="emptyRow24">
                               &nbsp;
                             </td>
@@ -408,7 +408,11 @@
                               $taskInfo.context$
                             </td>
                           </tr>
-
+                          <tr>
+                            <td colspan="2">
+                              <% } %>
+                            </td>
+                          </tr>
                           <tr>
                             <td colspan="2" height="32" class="emptyRow32">
                               &nbsp;

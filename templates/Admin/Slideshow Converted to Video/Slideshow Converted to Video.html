@@ -254,6 +254,7 @@
                               class="intro-image-wrapper"
                               valign="top"
                               height="70"
+                              width="124"
                             >
                               <img
                                 height="70"
@@ -322,7 +323,7 @@
                                         <tr>
                                           <td align="center" valign="middle">
                                             <a
-                                              href="$taskInfo.taskLink$"
+                                              href="$taskInfo.taskUrl$"
                                               style="word-wrap:normal; color:#4d7cc7; word-break:normal; white-space:nowrap; display:block; text-decoration:none"
                                               target="_blank"
                                             >
@@ -336,7 +337,7 @@
                                                   <td class="cta">
                                                     <a
                                                       class="cta-inner"
-                                                      href="$taskInfo.taskLink$"
+                                                      href="$taskInfo.taskUrl$"
                                                       target="_blank"
                                                       >Go To Video</a
                                                     >
@@ -355,7 +356,7 @@
                           </tr>
                           <tr>
                             <td colspan="2">
-                                <% if (vossInfo.taskInfo[0].context != '') { %>
+                                <% if (vossInfo.taskInfo.context != '') { %>
                             </td>
                           </tr> 
                           <tr>

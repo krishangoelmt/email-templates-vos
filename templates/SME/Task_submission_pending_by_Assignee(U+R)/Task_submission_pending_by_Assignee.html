@@ -243,11 +243,7 @@
                               valign="top"
                               align="left"
                             >
-                              Hi $userInfo.name$! Your task submission of the of
-                              the Voice-over Slideshow ‘$taskInfo.taskName$’ is
-                              <span class="bold-black-text">
-                                pending.
-                              </span>
+                              Hi $userInfo.name$! A task assigned to you on the ‘$taskInfo.taskName$’ Voiceover Slideshow is <span class="bold-black-text">due soon</span>.
                             </td>
                             <td
                               colspan="1"
@@ -392,7 +388,11 @@
                             </td>
                           </tr>
                           <!-- center grey area END -->
-
+                          <tr>
+                            <td colspan="2">
+                              <% if (vossInfo.taskInfo.context != '') { %>
+                            </td>
+                          </tr> 
                           <tr>
                             <td colspan="2" height="24" class="emptyRow24">
                               &nbsp;
@@ -413,7 +413,11 @@
                               $taskInfo.context$
                             </td>
                           </tr>
-
+                          <tr>
+                            <td colspan="2">
+                              <% } %>
+                            </td>
+                          </tr> 
                           <tr>
                             <td colspan="2" height="32" class="emptyRow32">
                               &nbsp;

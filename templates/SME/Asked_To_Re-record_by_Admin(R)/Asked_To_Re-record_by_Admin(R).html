@@ -242,16 +242,7 @@
                               valign="top"
                               align="left"
                             >
-                              Hi $userInfo.name$! You've been
-                              <span class="bold-black-text">
-                                Asked To Re-record
-                              </span>
-                              on
-                              <span class="bold-black-text">
-                                $taskInfo.noOfSlides$ slide(s)
-                              </span>
-                              of the Voice-over Slideshow ‘$taskInfo.taskName$’ by
-                              $params.fromName$
+                              Hi $userInfo.name$! $params.fromName$ has <span class="bold-black-text">asked you to re-record</span> on <span class="bold-black-text">$taskInfo.noOfSlides$ <% if (vossInfo.taskInfo.noOfSlides > 1) { %>slides<% } else { %>slide<% } %></span> of ‘$taskInfo.taskName$’ Voiceover Slideshow.   
                             </td>
                             <td
                               colspan="1"
@@ -359,6 +350,11 @@
                             </td>
                           </tr>
                           <tr>
+                            <td colspan="2">
+                              <% if (vossInfo.taskInfo.notes != '') { %>
+                            </td>
+                          </tr>
+                          <tr>
                             <td colspan="2" height="24" class="emptyRow24">
                               &nbsp;
                             </td>
@@ -376,6 +372,16 @@
                           <tr>
                             <td colspan="2" class="context-text" align="left">
                               $taskInfo.notes$
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">
+                              <% } %>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">
+                              <% if (vossInfo.taskInfo.context != '') { %>
                             </td>
                           </tr>
                           <tr>
@@ -398,7 +404,11 @@
                               $taskInfo.context$
                             </td>
                           </tr>
-
+                          <tr>
+                            <td colspan="2">
+                              <% ) %>
+                            </td>
+                          </tr>
                           <tr>
                             <td colspan="2" height="32" class="emptyRow32">
                               &nbsp;
