@@ -316,19 +316,7 @@
                               valign="top"
                               align="left"
                             >
-                              Hi $userInfo.name$! Your
-                              <span class="bold-black-text">
-                                $notificationInfo.totalNoOfSlidesApproved$
-                              </span>
-                              submitted recordings on slides of
-                              <span class="bold-black-text">
-                                $taskInfo.length$
-                              </span>
-                              Voice-over Slideshows have been
-                              <span class="bold-green-text">
-                                Approved
-                              </span>
-                              .
+                              Hi $userInfo.name$! Admins have <span class="bold-green-text">approved</span> <span class="bold-black-text">$notificationInfo.totalNoOfSlidesApproved$</span> <% if (vossInfo.totalNoOfSlidesApproved > 1) { %>recordings<% } else { %>recording<% } %> you submitted for <span class="bold-black-text">$taskInfo.length$</span> Voiceover <% if (vossInfo.taskInfo.length > 1) { %>Slideshows<% } else { %>Slideshow<% } %>.
                             </td>
                           </tr>
                           <tr>
@@ -346,12 +334,12 @@
                                   class="list-table"
                                 >
                                   <tbody>
-                                    <tr>
+                                    <!-- <tr>
                                       <td colspan="3">
                                         <% var i = 0 %> <% for(i=0; i <
-                                          $taskInfo.length$ && i < 50; i++) { %>
+                                          vossInfo.taskInfo.length && i < 50; i++) { %>
                                       </td>
-                                    </tr>
+                                    </tr> -->
                                     <!-- Row to be repeated START -->
                                     <tr>
                                       <td
@@ -399,8 +387,7 @@
                                                 <span class="separator">
                                                   &bull;
                                                 </span>
-                                                Due date:
-                                                $taskInfo[i].dueDate$
+                                                $taskInfo[i].totalNoOfSlidesApproved$ <% if (vossInfo.taskInfo[i].totalNoOfSlidesApproved > 1) { %>Slides<% } else { %>Slide<% } %> Approved
                                               </td>
                                             </tr>
                                           </tbody>
@@ -486,9 +473,9 @@
                                       </td>
                                     </tr>
                                     <!-- Row to be repeated END -->
-                                    <tr>
+                                    <!-- <tr>
                                       <td><% } %></td>
-                                    </tr>
+                                    </tr> -->
                                   </tbody>
                                 </table>
                               </center>

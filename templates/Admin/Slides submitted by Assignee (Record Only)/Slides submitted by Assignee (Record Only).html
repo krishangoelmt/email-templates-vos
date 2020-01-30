@@ -274,15 +274,17 @@
                     </tr>
                     <tr>
                       <td colspan="1" class="open-text" align="left">
-                        Hi $userInfo.name$!! $params.fromName$ has <span class="bold-black-text">submitted</span> recording on <span class="bold-black-text">$taskInfo.noOfSlides$ <% if (vossInfo.taskInfo[0].noOfSlides > 1) { %>slides<% } else { %>slide<% } %></span> of the ‘$taskInfo.taskName$’ Voiceover Slideshow.
+                        Hi $userInfo.name$! $params.fromName$ has <span class="bold-black-text">submitted</span> recording on <span class="bold-black-text">$taskInfo.noOfSlides$ <% if (vossInfo.taskInfo.noOfSlides > 1) { %>slides<% } else { %>slide<% } %></span> of the ‘$taskInfo.taskName$’ Voiceover Slideshow.
                       </td>
                       <td
                         class="open-image-wrap"
                         valign="top"
                         height="70"
+                        width="124"
                         colspan="1"
                       >
                         <img
+                          width="124"
                           height="70"
                           src="$taskInfo.taskImageUrl$"
                           class="open-image"
@@ -400,7 +402,7 @@
                     </tr>
                     <tr>
                       <td colspan="2">
-                        <% if (vossInfo.taskInfo[0].context != '') { %>
+                        <% if (vossInfo.taskInfo.context != '') { %>
                       </td>
                     </tr> 
                     <tr>

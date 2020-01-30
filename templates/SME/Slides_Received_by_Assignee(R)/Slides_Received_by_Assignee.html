@@ -222,6 +222,12 @@
         font-weight: 600;
         font-family: open sans, helvetica, arial, verdana;
       }
+
+      .instructionsStyling {
+        font-size: 14px;
+        color: #2A2E36;
+        line-height: 20px;
+      }
     </style>
   </head>
 
@@ -268,11 +274,7 @@
                     </tr>
                     <tr>
                       <td colspan="1" class="open-text" align="left">
-                        Hi $userInfo.name$! You’ve been assigned to record on
-                        <span class="bold-black-text">
-                          $taskInfo.noOfSlides$
-                        </span>
-                        slides of a Voice-over Slideshow ‘$taskInfo.taskName$’.
+                        Hi $userInfo.name$! You have been assigned the task of recording voiceovers for <span class="bold-black-text">$taskInfo.noOfSlides$</span> <% if(vossInfo.taskInfo.noOfSlides > 1) { %>slides<% } else { %>slide<% } %>. This is for the ‘$taskInfo.taskName$’ Voiceover Slideshow.
                       </td>
                       <td
                         class="open-image-wrap"
@@ -396,6 +398,11 @@
                       </td>
                     </tr>
                     <tr>
+                      <td colspan="2">
+                        <% if (vossInfo.taskInfo.context != '') { %>
+                      </td>
+                    </tr> 
+                    <tr>
                       <td colspan="2" class="emptyRow24">&nbsp;</td>
                     </tr>
                     <tr>
@@ -409,6 +416,68 @@
                     <tr>
                       <td colspan="2" class="context-text" align="left">
                         $taskInfo.context$
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        <% } %>
+                      </td>
+                    </tr> 
+                    <tr>
+                      <td colspan="2" class="emptyRow24">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="context" align="left">
+                        Instructions
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="emptyRow8">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="context-text" align="left">
+                        <table  width="100%" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td valign="top" width="50" valign="top" class="instructionsStyling">
+                              Step 1:
+                            </td>
+                            <td valign="top" width="auto" class="instructionsStyling">
+                              Hit the link in the email to navigate to the slides assigned to you.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td width="50" valign="top" class="instructionsStyling">
+                                Step 2:
+                              </td>
+                              <td width="auto" valign="top" class="instructionsStyling">
+                                  Once in the slide view, click the “Start Recording" button on each slide to initiate.
+                              </td>
+                          </tr>
+                          <tr>
+                            <td width="50" valign="top" class="instructionsStyling">
+                                Step 3:
+                              </td>
+                              <td width="auto" valign="top" class="instructionsStyling">
+                                  Once recorded hit the "Stop Recording" button.
+                              </td>
+                          </tr>
+                          <tr>
+                            <td width="50" valign="top" class="instructionsStyling">
+                                Step 4:
+                              </td>
+                              <td width="auto" valign="top" class="instructionsStyling">
+                                  Once the processing is complete, your recording is saved as a draft.
+                              </td>
+                          </tr>
+                          <tr>
+                            <td width="50" valign="top" class="instructionsStyling">
+                                Step 5:
+                              </td>
+                              <td width="auto" valign="top" class="instructionsStyling">
+                                  Once you are comfortable with the draft, hit the “Submit This Draft" button to submit your recording for approval.
+                              </td>
+                          </tr>
+                        </table>
                       </td>
                     </tr>
                     <tr>

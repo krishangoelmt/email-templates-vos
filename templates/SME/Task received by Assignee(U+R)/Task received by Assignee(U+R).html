@@ -189,6 +189,12 @@
         height: 32px;
         line-height: 32px;
       }
+
+      .instructionsStyling {
+        font-size: 14px;
+        color: #2A2E36;
+        line-height: 20px;
+      }
     </style>
   </head>
   <body>
@@ -244,12 +250,7 @@
                               valign="top"
                               align="left"
                             >
-                              Hi $userInfo.name$! You've been assigned to
-                              <span class="bold-black-text">
-                                upload slides and record
-                              </span>
-                              on a Voice-over Slideshow ‘$taskInfo.taskName$’ by
-                              $params.fromName$.
+                              Hi $userInfo.name$! $params.fromName$ has assigned you to a new <span class="bold-black-text">upload slides and record</span> task. This is for the ‘$taskInfo.taskName$’ Voiceover Slideshow.
                             </td>
                             <td
                               colspan="1"
@@ -393,7 +394,11 @@
                             </td>
                           </tr>
                           <!-- center grey area END -->
-
+                          <tr>
+                            <td colspan="2">
+                              <% if (vossInfo.taskInfo.context != '') { %>
+                            </td>
+                          </tr> 
                           <tr>
                             <td colspan="2" height="24" class="emptyRow24">
                               &nbsp;
@@ -414,7 +419,76 @@
                               $taskInfo.context$
                             </td>
                           </tr>
-
+                          <tr>
+                            <td colspan="2">
+                              <% } %>
+                            </td>
+                          </tr> 
+                          <tr>
+                            <td colspan="2" class="emptyRow24">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" class="context-label" align="left">
+                              Instructions
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" class="emptyRow8">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" class="context-text" align="left">
+                              <table  width="100%" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td valign="top" width="50" valign="top" class="instructionsStyling">
+                                    Step 1:
+                                  </td>
+                                  <td valign="top" width="auto" class="instructionsStyling">
+                                      Hit the link in the email to navigate to the task.
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td width="50" valign="top" class="instructionsStyling">
+                                      Step 2:
+                                    </td>
+                                    <td width="auto" valign="top" class="instructionsStyling">
+                                        Once in the task view, click the “Upload Slides" button to add your slides.
+                                    </td>
+                                </tr>
+                                <tr>
+                                  <td width="50" valign="top" class="instructionsStyling">
+                                      Step 3:
+                                    </td>
+                                    <td width="auto" valign="top" class="instructionsStyling">
+                                        Click the “Start Recording" button on each slide to initiate the recording.
+                                    </td>
+                                </tr>
+                                <tr>
+                                  <td width="50" valign="top" class="instructionsStyling">
+                                      Step 4:
+                                    </td>
+                                    <td width="auto" valign="top" class="instructionsStyling">
+                                        Once recorded hit the "Stop Recording" button.
+                                    </td>
+                                </tr>
+                                <tr>
+                                  <td width="50" valign="top" class="instructionsStyling">
+                                      Step 5:
+                                    </td>
+                                    <td width="auto" valign="top" class="instructionsStyling">
+                                        Once the processing is complete, your recording is saved as a draft.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="50" valign="top" class="instructionsStyling">
+                                        Step 6:
+                                      </td>
+                                      <td width="auto" valign="top" class="instructionsStyling">
+                                          Once you have recorded on all the slides and are comfortable with the drafts, hit the “Submit Task" button to submit the slides and recordings
+                                      </td>
+                                  </tr>
+                              </table>
+                            </td>
+                          </tr>
                           <tr>
                             <td colspan="2" height="32" class="emptyRow32">
                               &nbsp;

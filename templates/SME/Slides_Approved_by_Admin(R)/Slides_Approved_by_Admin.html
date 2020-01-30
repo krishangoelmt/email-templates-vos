@@ -247,16 +247,7 @@
                               valign="top"
                               align="left"
                             >
-                              Hi $userInfo.name$! Your
-                              <span class="bold-black-text">
-                                $notificationInfo.noOfSlidesApproved$ of $notificationInfo.noOfSlidesSubmitted$
-                              </span>
-                              submitted recordings on slides of the Voice-over
-                              Slideshow ‘$taskInfo.taskName$’ has been
-                              <span class="bold-green-text">
-                                Approved
-                              </span>
-                              by $params.fromName$$
+                              Hi $userInfo.name$! $params.fromName$ has <span class="bold-green-text">approved</span> <span class="bold-black-text">$notificationInfo.noOfSlidesApproved$</span> <%if (vossInfo.noOfSlidesApproved > 1) { %>recordings<% } else { %>recording<% } %> you submitted for the ‘$taskInfo.taskName$’ Voiceover Slideshow.
                             </td>
                             <td
                               colspan="1"
@@ -414,6 +405,11 @@
                             </td>
                           </tr>
                           <tr>
+                            <td colspan="2">
+                              <% if (vossInfo.taskInfo.context != '') { %>
+                            </td>
+                          </tr> 
+                          <tr>
                             <td colspan="2" height="24" class="emptyRow24">
                               &nbsp;
                             </td>
@@ -433,7 +429,11 @@
                               $taskInfo.context$
                             </td>
                           </tr>
-
+                          <tr>
+                            <td colspan="2">
+                              <% if } %>
+                            </td>
+                          </tr> 
                           <tr>
                             <td colspan="2" height="32" class="emptyRow32">
                               &nbsp;

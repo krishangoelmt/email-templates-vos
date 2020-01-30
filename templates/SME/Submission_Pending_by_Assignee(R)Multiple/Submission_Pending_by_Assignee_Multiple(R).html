@@ -301,12 +301,7 @@
                               valign="top"
                               align="left"
                             >
-                              Hi $userInfo.name$! Your recording submissions are
-                              pending for
-                              <span class="bold-black-text">
-                                $taskInfo.length$
-                              </span>
-                              Voice-over Slideshows.
+                              Hi $userInfo.name$! Your Voiceover recordings on <span class="bold-black-text">$notificationInfo.noOfSlidesPending$ slides</span> of <span class="bold-black-text">$taskInfo.length$</span> Voiceover Slideshows are due soon.
                             </td>
                           </tr>
                           <tr>
@@ -324,12 +319,12 @@
                                   class="list-table"
                                 >
                                   <tbody>
-                                    <tr>
+                                    <!-- <tr>
                                       <td colspan="3">
                                         <% var i = 0 %> <% for(i=0; i <
                                         $taskInfo.length$ && i < 50; i++) { %>
                                       </td>
-                                    </tr>
+                                    </tr> -->
                                     <!-- Row to be repeated START -->
                                     <tr>
                                       <td
@@ -459,9 +454,9 @@
                                       </td>
                                     </tr>
                                     <!-- Row to be repeated END -->
-                                    <tr>
+                                    <!-- <tr>
                                       <td><% } %></td>
-                                    </tr>
+                                    </tr> -->
                                   </tbody>
                                 </table>
                               </center>
