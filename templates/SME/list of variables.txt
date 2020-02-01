@@ -51,8 +51,8 @@ templateID: _vos_slide_record_single_admin_multiple_slideshow_submission_pending
 	$taskInfo[i].taskImageUrl$
 	$taskInfo[i].taskName$
 	$taskInfo[i].dueDate$
-	$taskInfo[i].taskUrl$
-	$taskInfo[i].taskUrl$
+	$taskInfo[i].taskLink$
+	$taskInfo[i].taskLink$
 	$params.fromName$
 	$companyInfo.companyName$
 	$userInfo.email$
@@ -74,8 +74,8 @@ https://projects.invisionapp.com/d/main#/console/18191940/388856895/comments
 	$taskInfo[i].taskName$
 	$taskInfo[i].taskType$
 	$taskInfo[i].dueDate$
-	$taskInfo[i].taskUrl$
-	$taskInfo[i].taskUrl$
+	$taskInfo[i].taskLink$
+	$taskInfo[i].taskLink$
 	$params.fromName$
 	$companyInfo.companyName$
 	$userInfo.email$
@@ -184,8 +184,8 @@ https://projects.invisionapp.com/d/main#/console/18191940/386303907/preview
 	$taskInfo[i].taskImageUrl$
 	$taskInfo[i].taskName$
 	$taskInfo[i].dueDate$
-	$taskInfo[i].taskUrl$
-	$taskInfo[i].taskUrl$
+	$taskInfo[i].taskLink$
+	$taskInfo[i].taskLink$
 	$params.fromName$
 	$companyInfo.companyName$
 	$userInfo.email$
@@ -254,8 +254,8 @@ https://projects.invisionapp.com/d/main#/console/18191940/388856966/preview
 	$taskInfo[i].taskName$
 	$taskInfo[i].taskType$
 	$taskInfo[i].dueDate$
-	$taskInfo[i].taskUrl$
-	$taskInfo[i].taskUrl$
+	$taskInfo[i].taskLink$
+	$taskInfo[i].taskLink$
 	$params.fromName$
 	$companyInfo.companyName$
 	$userInfo.email$
@@ -301,8 +301,8 @@ https://projects.invisionapp.com/d/main#/console/18191940/391049017/preview
 	$taskInfo[i].taskName$
 	$taskInfo[i].taskType$
 	$taskInfo[i].dueDate$
-	$taskInfo[i].taskUrl$
-	$taskInfo[i].taskUrl$
+	$taskInfo[i].taskLink$
+	$taskInfo[i].taskLink$
 	$companyInfo.companyName$
 	$userInfo.email$
 	$userInfo.email$
