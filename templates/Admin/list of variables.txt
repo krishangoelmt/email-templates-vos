@@ -147,8 +147,21 @@ $taskInfo.taskName$
 $taskInfo.taskImageUrl$
 $notificationInfo.centerImageUrl$
 $taskInfo.taskLink$
-vossInfo.taskInfo.context
-$taskInfo.context$
+
+$companyInfo.companyName$
+$userInfo.email$
+$companyInfo.companyLink$
+
+Slideshow Converted to Video Failed
+templateId: _voiceover_slideshow_convert_to_video_failed
+https://projects.invisionapp.com/d/?origin=v7?origin=v7#/console/18359198/402130834/preview?scrollOffset=34622
+
+$companyInfo.companyName$
+$userInfo.name$
+$taskInfo.taskName$
+$taskInfo.taskImageUrl$
+$notificationInfo.centerImageUrl$
+$taskInfo.taskLink$
 $companyInfo.companyName$
 $userInfo.email$
 $companyInfo.companyLink$
