@@ -424,6 +424,11 @@
                       </td>
                     </tr> 
                     <tr>
+                      <td colspan="2">
+                        <% if (vossInfo.taskInfo.instructionSteps != '') { %>
+                      </td>
+                    </tr> 
+                    <tr>
                       <td colspan="2" class="emptyRow24">&nbsp;</td>
                     </tr>
                     <tr>
@@ -436,48 +441,12 @@
                     </tr>
                     <tr>
                       <td colspan="2" class="context-text" align="left">
-                        <table  width="100%" cellspacing="0" cellpadding="0">
-                          <tr>
-                            <td valign="top" width="50" valign="top" class="instructionsStyling">
-                              Step 1:
-                            </td>
-                            <td valign="top" width="auto" class="instructionsStyling">
-                              Hit the link in the email to navigate to the slides assigned to you.
-                            </td>
-                          </tr>
-                          <tr>
-                            <td width="50" valign="top" class="instructionsStyling">
-                                Step 2:
-                              </td>
-                              <td width="auto" valign="top" class="instructionsStyling">
-                                  Once in the slide view, click the “Start Recording" button on each slide to initiate.
-                              </td>
-                          </tr>
-                          <tr>
-                            <td width="50" valign="top" class="instructionsStyling">
-                                Step 3:
-                              </td>
-                              <td width="auto" valign="top" class="instructionsStyling">
-                                  Once recorded hit the "Stop Recording" button.
-                              </td>
-                          </tr>
-                          <tr>
-                            <td width="50" valign="top" class="instructionsStyling">
-                                Step 4:
-                              </td>
-                              <td width="auto" valign="top" class="instructionsStyling">
-                                  Once the processing is complete, your recording is saved as a draft.
-                              </td>
-                          </tr>
-                          <tr>
-                            <td width="50" valign="top" class="instructionsStyling">
-                                Step 5:
-                              </td>
-                              <td width="auto" valign="top" class="instructionsStyling">
-                                  Once you are comfortable with the draft, hit the “Submit This Draft" button to submit your recording for approval.
-                              </td>
-                          </tr>
-                        </table>
+                        $taskInfo.instructionSteps$
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        <% } %>
                       </td>
                     </tr>
                     <tr>
