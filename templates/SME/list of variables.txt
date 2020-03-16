@@ -42,7 +42,7 @@ https://projects.invisionapp.com/d/main#/console/18191940/386302170/preview
 
 Submission_Pending_by_Assignee(R)Multiple
 https://projects.invisionapp.com/d/main#/console/18191940/386302169/preview
-templateID: _vos_slide_record_single_admin_multiple_slideshow_submission_pending
+templateI
 
 	$companyInfo.companyName$
 	$userInfo.name$
@@ -128,7 +128,6 @@ https://projects.invisionapp.com/d/main#/console/18191940/386302867/comments
 	$userInfo.email$
 	$userInfo.email$
 	$companyInfo.companyLink$
-
 
 Task received by Assignee(U+R)
 templateID: _vos_new_task_upload_record_assignment
