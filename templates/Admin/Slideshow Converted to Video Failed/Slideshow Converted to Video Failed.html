@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>You've been assigned to upload slides and record.</title>
+    <title>Convert to Video Failed</title>
     <style>
       .tableWrapper {
         font-family: open sans, helvetica, arial, verdana;
@@ -57,7 +57,7 @@
       }
 
       .center-grey-area {
-        padding: 16px 24px 32px;
+        padding: 32px;
         border-radius: 4px;
         background-color: #f5f6f7;
       }
@@ -100,8 +100,6 @@
       }
 
       .cta-inner {
-        font-size: 14px;
-        line-height: 20px;
         display: inline-block;
         text-decoration: none;
         color: #ffffff;
@@ -155,6 +153,11 @@
         font-weight: 800;
       }
 
+      .bold-green-text {
+        color: #35c759;
+        font-weight: 800;
+      }
+
       .emptyRow8 {
         padding: 0;
         margin: 0;
@@ -188,12 +191,6 @@
         margin: 0;
         height: 32px;
         line-height: 32px;
-      }
-
-      .instructionsStyling {
-        font-size: 14px;
-        color: #2A2E36;
-        line-height: 20px;
       }
     </style>
   </head>
@@ -234,12 +231,12 @@
                       >
                         <tbody>
                           <tr>
-                            <td colspan="2" class="companyName alignLeft">
+                            <td colspan="1" class="companyName alignLeft">
                               $companyInfo.companyName$
                             </td>
                           </tr>
                           <tr>
-                            <td colspan="2" height="32" class="emptyRow32">
+                            <td colspan="1" height="32" class="emptyRow32">
                               &nbsp;
                             </td>
                           </tr>
@@ -250,31 +247,16 @@
                               valign="top"
                               align="left"
                             >
-                              Hi $userInfo.name$! $params.fromName$ has assigned you to a new <span class="bold-black-text">upload slides and record</span> task. This is for the ‘$taskInfo.taskName$’ Voiceover Slideshow.
-                            </td>
-                            <td
-                              colspan="1"
-                              class="intro-image-wrapper"
-                              valign="top"
-                              height="70"
-                            >
-                              <img
-                                height="70"
-                                width="124"
-                                src="$taskInfo.taskImageUrl$"
-                                class="intro-image"
-                                alt="Task attachments"
-                              />
+                              Hi $userInfo.name$! Conversion of the ‘$taskInfo.taskName$’ Voiceover Slideshow to video has failed.
                             </td>
                           </tr>
                           <tr>
-                            <td colspan="2" height="24" class="emptyRow24">
+                            <td colspan="1" height="24" class="emptyRow24">
                               &nbsp;
                             </td>
                           </tr>
-
                           <tr>
-                            <td colspan="2" class="center-grey-area">
+                            <td colspan="1" class="center-grey-area">
                               <table
                                 width="100%"
                                 align="center"
@@ -284,51 +266,15 @@
                               >
                                 <tr>
                                   <td
-                                    width="100%"
-                                    class="center-title align-center"
-                                    align="center"
-                                  >
-                                    Due Date
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td
-                                    width="100%"
-                                    class="center-text align-center"
-                                    align="center"
-                                  >
-                                    $taskInfo.dueDate$
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td colspan="2" class="emptyRow16">&nbsp;</td>
-                                </tr>
-                                <tr>
-                                  <td colspan="2" class="horizontal-line">
-                                    &nbsp;
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td
-                                    colspan="2"
-                                    height="24"
-                                    class="emptyRow24"
-                                  >
-                                    &nbsp;
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td
-                                    colspan="2"
+                                    colspan="1"
                                     align="center"
                                     height="160"
-                                    width="208"
                                     class="align-center"
                                   >
                                     <img
                                       align="center"
                                       src="$notificationInfo.centerImageUrl$"
-                                      alt="Task pending illustration"
+                                      alt="Convert to Video Illustration"
                                       width="208"
                                       height="160"
                                       class="center-img"
@@ -337,7 +283,7 @@
                                 </tr>
                                 <tr>
                                   <td
-                                    colspan="2"
+                                    colspan="1"
                                     height="24"
                                     class="emptyRow24"
                                   >
@@ -346,7 +292,7 @@
                                 </tr>
                                 <tr>
                                   <td
-                                    colspan="2"
+                                    colspan="1"
                                     class="align-center"
                                     align="center"
                                   >
@@ -362,7 +308,7 @@
                                         <tr>
                                           <td align="center" valign="middle">
                                             <a
-                                              href="$taskInfo.taskLink$"
+                                              href="$taskInfo.taskUrl$"
                                               style="word-wrap:normal; color:#4d7cc7; word-break:normal; white-space:nowrap; display:block; text-decoration:none"
                                               target="_blank"
                                             >
@@ -376,9 +322,9 @@
                                                   <td class="cta">
                                                     <a
                                                       class="cta-inner"
-                                                      href="$taskInfo.taskLink$"
+                                                      href="$taskInfo.taskUrl$"
                                                       target="_blank"
-                                                      >Go To Task</a
+                                                      >Go To Slideshow</a
                                                     >
                                                   </td>
                                                 </tr>
@@ -392,93 +338,35 @@
                                 </tr>
                               </table>
                             </td>
-                          </tr>
-                          <!-- center grey area END -->
-                          <tr>
-                            <td colspan="2">
-                              <% if (vossInfo.taskInfo.context != '') { %>
-                            </td>
                           </tr> 
                           <tr>
-                            <td colspan="2" height="24" class="emptyRow24">
+                            <td colspan="1" height="32" class="emptyRow32">
                               &nbsp;
                             </td>
                           </tr>
                           <tr>
-                            <td colspan="2" class="context-label" align="left">
-                              Context
-                            </td>
-                          </tr>
-                          <tr>
-                            <td colspan="2" height="8" class="emptyRow8">
-                              &nbsp;
-                            </td>
-                          </tr>
-                          <tr>
-                            <td colspan="2" class="context-text" align="left">
-                              $taskInfo.context$
-                            </td>
-                          </tr>
-                          <tr>
-                            <td colspan="2">
-                              <% } %>
-                            </td>
-                          </tr> 
-                          <tr>
-                            <td colspan="2">
-                              <% if (vossInfo.taskInfo.instructionSteps != '') { %>
-                            </td>
-                          </tr> 
-                          <tr>
-                            <td colspan="2" class="emptyRow24">&nbsp;</td>
-                          </tr>
-                          <tr>
-                            <td colspan="2" class="context" align="left">
-                              Instructions
-                            </td>
-                          </tr>
-                          <tr>
-                            <td colspan="2" class="emptyRow8">&nbsp;</td>
-                          </tr>
-                          <tr>
-                            <td colspan="2" class="context-text" align="left">
-                              $taskInfo.instructionSteps$
-                            </td>
-                          </tr>
-                          <tr>
-                            <td colspan="2">
-                              <% } %>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td colspan="2" height="32" class="emptyRow32">
-                              &nbsp;
-                            </td>
-                          </tr>
-                          <tr>
-                            <td colspan="2" class="signature" align="left">
+                            <td colspan="1" class="signature" align="left">
                               Thanks, <br />
-                              $params.fromName$ <br />
                               $companyInfo.companyName$
                             </td>
                           </tr>
                           <tr>
-                            <td colspan="2" height="24" class="emptyRow24">
+                            <td colspan="1" height="24" class="emptyRow24">
                               &nbsp;
                             </td>
                           </tr>
                           <tr>
-                            <td colspan="2" class="horizontal-line">&nbsp;</td>
+                            <td colspan="1" class="horizontal-line">&nbsp;</td>
                           </tr>
                           <tr>
-                            <td colspan="2" height="20" class="emptyRow20">
+                            <td colspan="1" height="20" class="emptyRow20">
                               &nbsp;
                             </td>
                           </tr>
 
                           <tr>
                             <td
-                              colspan="2"
+                              colspan="1"
                               class="footer-grey-text"
                               align="left"
                             >

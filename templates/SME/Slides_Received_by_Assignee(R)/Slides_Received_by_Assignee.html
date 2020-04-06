@@ -222,6 +222,12 @@
         font-weight: 600;
         font-family: open sans, helvetica, arial, verdana;
       }
+
+      .instructionsStyling {
+        font-size: 14px;
+        color: #2A2E36;
+        line-height: 20px;
+      }
     </style>
   </head>
 
@@ -260,7 +266,7 @@
                   >
                     <tr>
                       <td colspan="2" class="templateLogoText alignLeft">
-                        $company_name$
+                        $companyInfo.companyName$
                       </td>
                     </tr>
                     <tr>
@@ -268,11 +274,7 @@
                     </tr>
                     <tr>
                       <td colspan="1" class="open-text" align="left">
-                        Hi $ASIGNEE_NAME$! You’ve been assigned to record on
-                        <span class="bold-black-text">
-                          $NO_OF_SLIDES$
-                        </span>
-                        slides of a Voice-over Slideshow ‘$TASK_NAME$’.
+                        Hi $userInfo.name$! You have been assigned the task of recording voiceovers for <span class="bold-black-text">$taskInfo.noOfSlides$ <% if(vossInfo.taskInfo.noOfSlides > 1) { %>slides<% } else { %>slide<% } %></span>. This is for the ‘$taskInfo.taskName$’ Voiceover Slideshow.
                       </td>
                       <td
                         class="open-image-wrap"
@@ -282,7 +284,7 @@
                       >
                         <img
                           height="70"
-                          src="$URL_TASK_IMAGE$"
+                          src="$taskInfo.taskImageUrl$"
                           class="open-image"
                           alt="Task attachments"
                         />
@@ -318,10 +320,10 @@
                           </tr>
                           <tr>
                             <td width="50%" class="center-text" align="center">
-                              $ASSNEE_NAME$
+                              $params.fromName$
                             </td>
                             <td width="50%" class="center-text">
-                              $DUE_DATE$
+                              $taskInfo.dueDate$
                             </td>
                           </tr>
                           <tr>
@@ -342,7 +344,7 @@
                             >
                               <img
                                 align="center"
-                                src="$CENTER_IMAGE_URL$"
+                                src="$notificationInfo.centerImageUrl$"
                                 width="auto"
                                 height="160"
                                 class="content-img"
@@ -365,7 +367,7 @@
                                 <tr>
                                   <td align="center" valign="middle">
                                     <a
-                                      href="$SLIDESHOW_URL$"
+                                      href="$taskInfo.taskLink$"
                                       style="word-wrap:normal; color:#4d7cc7; word-break:normal; white-space:nowrap; display:block; text-decoration:none"
                                       target="_blank"
                                     >
@@ -379,7 +381,7 @@
                                           <td class="cta">
                                             <a
                                               class="cta-inner"
-                                              href="$SLIDESHOW_URL$"
+                                              href="$taskInfo.taskLink$"
                                               target="_blank"
                                               >Go To Slideshow</a
                                             >
@@ -396,6 +398,11 @@
                       </td>
                     </tr>
                     <tr>
+                      <td colspan="2">
+                        <% if (vossInfo.taskInfo.context != '') { %>
+                      </td>
+                    </tr> 
+                    <tr>
                       <td colspan="2" class="emptyRow24">&nbsp;</td>
                     </tr>
                     <tr>
@@ -408,7 +415,38 @@
                     </tr>
                     <tr>
                       <td colspan="2" class="context-text" align="left">
-                        $CONTEXT$
+                        $taskInfo.context$
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        <% } %>
+                      </td>
+                    </tr> 
+                    <tr>
+                      <td colspan="2">
+                        <% if (vossInfo.taskInfo.instructionSteps != '') { %>
+                      </td>
+                    </tr> 
+                    <tr>
+                      <td colspan="2" class="emptyRow24">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="context" align="left">
+                        Instructions
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="emptyRow8">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="context-text" align="left">
+                        $taskInfo.instructionSteps$
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        <% } %>
                       </td>
                     </tr>
                     <tr>
@@ -422,7 +460,7 @@
                       >
                         Thanks, <br />
                         $params.fromName$ <br />
-                        $company.companyName$
+                        $companyInfo.companyName$
                       </td>
                     </tr>
                     <tr>
@@ -437,14 +475,14 @@
                     <tr>
                       <td colspan="2" class="footerTextGrey">
                         The email was sent to
-                        <a href="mailto:$user_email$" class="blueTextLinkSmall"
-                          >$user_email$</a
+                        <a href="mailto:$userInfo.email$" class="blueTextLinkSmall"
+                          >$userInfo.email$</a
                         >. You received this email because you were invited to
                         <a
-                          href="$company_url$"
+                          href="$companyInfo.companyLink$"
                           target="_blank"
                           class="blueTextLinkSmall"
-                          >$company_name$</a
+                          >$companyInfo.companyName$</a
                         >.
                       </td>
                     </tr>

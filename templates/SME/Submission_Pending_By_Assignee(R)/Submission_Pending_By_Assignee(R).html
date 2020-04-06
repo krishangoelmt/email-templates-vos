@@ -227,7 +227,7 @@
                         <tbody>
                           <tr>
                             <td colspan="2" class="companyName alignLeft">
-                              $COMPANY_NAME$
+                              $companyInfo.companyName$
                             </td>
                           </tr>
                           <tr>
@@ -242,12 +242,7 @@
                               valign="top"
                               align="left"
                             >
-                              Hi $ASIGNEE_NAME$! Your recording submissions on
-                              <span class="bold-black-text">
-                                $NO_OF_SLIDES$ slide(s)
-                              </span>
-                              of the Voice-over Slideshow ‘$TASK_NAME$’ is
-                              pending.
+                              Hi $userInfo.name$! Your Voiceover recordings on <span class="bold-black-text">$taskInfo.noOfSlides$ <%if (vossInfo.taskInfo.noOfSlides > 1) { %>slides<% } else { %>slide<% } %></span> of ‘$taskInfo.taskName$’ Voiceover Slideshow <%if (vossInfo.taskInfo.noOfSlides > 1) { %>are<% } else { %>is<% } %> due.
                             </td>
                             <td
                               colspan="1"
@@ -258,7 +253,7 @@
                               <img
                                 height="70"
                                 width="124"
-                                src="$URL_TASK_IMAGE$"
+                                src="$taskInfo.taskImageUrl$"
                                 class="intro-image"
                                 alt="Task attachments"
                               />
@@ -293,7 +288,7 @@
                                     class="center-text align-center"
                                     align="center"
                                   >
-                                    $DUE_DATE$
+                                    $taskInfo.dueDate$
                                   </td>
                                 </tr>
                                 <tr>
@@ -322,7 +317,7 @@
                                   >
                                     <img
                                       align="center"
-                                      src="$CENTER_IMAGE_URL$"
+                                      src="$notificationInfo.centerImageUrl$"
                                       alt="Task pending illustration"
                                       width="208"
                                       height="160"
@@ -357,7 +352,7 @@
                                         <tr>
                                           <td align="center" valign="middle">
                                             <a
-                                              href="$SLIDESHOW_URL$"
+                                              href="$taskInfo.taskLink$"
                                               style="word-wrap:normal; color:#4d7cc7; word-break:normal; white-space:nowrap; display:block; text-decoration:none"
                                               target="_blank"
                                             >
@@ -371,7 +366,7 @@
                                                   <td class="cta">
                                                     <a
                                                       class="cta-inner"
-                                                      href="$SLIDESHOW_URL$"
+                                                      href="$taskInfo.taskLink$"
                                                       target="_blank"
                                                       >Go To Slideshow</a
                                                     >
@@ -386,6 +381,11 @@
                                   </td>
                                 </tr>
                               </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">
+                              <% if (vossInfo.taskInfo.context != '') { %>
                             </td>
                           </tr>
                           <tr>
@@ -405,10 +405,14 @@
                           </tr>
                           <tr>
                             <td colspan="2" class="context-text" align="left">
-                              $CONTEXT$
+                              $taskInfo.context$
                             </td>
                           </tr>
-
+                          <tr>
+                            <td colspan="2">
+                              <% } %>
+                            </td>
+                          </tr>
                           <tr>
                             <td colspan="2" height="32" class="emptyRow32">
                               &nbsp;
@@ -418,7 +422,7 @@
                             <td colspan="2" class="signature" align="left">
                               Thanks, <br />
                               $params.fromName$ <br />
-                              $company.companyName$
+                              $companyInfo.companyName$
                             </td>
                           </tr>
                           <tr>
@@ -443,16 +447,16 @@
                             >
                               The email was sent to
                               <a
-                                href="mailto:$user_email$"
+                                href="mailto:$userInfo.email$"
                                 class="footer-link-text"
-                                >$user_email$</a
+                                >$userInfo.email$</a
                               >. You received this email because you were
                               invited to
                               <a
-                                href="$company_url$"
+                                href="$companyInfo.companyLink$"
                                 target="_blank"
                                 class="footer-link-text"
-                                >$company_name$</a
+                                >$companyInfo.companyName$</a
                               >.
                             </td>
                           </tr>
